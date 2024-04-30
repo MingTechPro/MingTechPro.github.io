@@ -8,6 +8,7 @@ categories:
 tags:
   - Markdown
   - 博客
+mathjax: true
 ---
 
 9个Markdown文档进阶写作技巧分享：

@@ -41,7 +41,7 @@ external_link:
 filename_case: 0 # 把文件名称转换为 (1) 小写或 (2) 大写
 render_drafts: false # 显示草稿
 post_asset_folder: false # 启用 资源文件夹
-relative_link: true # 把链接改为与根目录的相对地址
+relative_link: false # 把链接改为与根目录的相对地址
 future: true # 显示未来的文章
 syntax_highlighter: highlight.js # 代码块高亮的设置
 # 代码块的设置
@@ -102,3 +102,8 @@ kramed:
   breaks: true
   smartLists: true
   smartypants: true
+
+algolia:
+  applicationID: '8CY9BECZSU'
+  apiKey: '30889e47c99a2c06e72db0fb022ab41a'
+  indexName: 'mingtechpro'
