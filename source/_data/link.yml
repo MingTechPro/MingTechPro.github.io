@@ -1,0 +1,52 @@
+# 链接设置
+#- class_name: EIN 个人项目
+#  class_desc: 项目稳定性？不存在的٩(๑•̀ω•́๑)۶
+#  link_list:
+#    - name: 博客名
+#      link: 博客地址
+#      avatar: 博客头像
+#      descr: 博客描述
+
+- class_name: EIN 个人项目
+  class_desc: 项目稳定性？不存在的٩(๑•̀ω•́๑)۶
+  link_list:
+    - name: ChenPeiming.github.io
+      link: https://github.com/MingTechPro/ChenPeiming52001.github.io
+      avatar:
+      descr: Power by Yummy Jekyll & Revised by Chen Peiming.
+
+    - name: js-api-script-toolbox
+      link: https://github.com/MingTechPro/js-api-script-toolbox
+      avatar: https://raw.githubusercontent.com/jerryc127/CDN/master/img/butterfly-github-avatar.png
+      descr: JavaScript-api-脚本 工具库
+
+- class_name: DOS 私人服务
+  class_descr: 网络服务推荐
+  link_list:
+    - name: GitHub
+      link: https://github.com/
+      avatar: https://raw.githubusercontent.com/jerryc127/CDN/master/img/butterfly-github-avatar.png
+      descr: 全球最大的代码仓库
+
+    - name: Leancloud
+      link: https://console.leancloud.cn/
+      avatar: https://console.leancloud.cn/favicon.ico
+      descr: 评论系统的后端
+
+    - name: Cloudflare
+      link: https://dash.cloudflare.com/
+      avatar: https://dash.cloudflare.com/apple-touch-icon-144x144.png
+      descr: 免费域名托管平台
+
+    - name: jsDelivr
+      link: https://www.jsdelivr.com/
+      avatar: https://www.jsdelivr.com/icons/favicon.svg
+      descr: 一个免费开源文件 CDN（内容分发网络）服务商
+
+- class_name: TROIS 友人帐
+  class_descr: 一群可可爱爱的小伙伴
+  link_list:
+    - name: ChenPeiming
+      link: https://mingtechpro.github.io/ChenPeiming52001.github.io/
+      avatar:
+      descr: ChenPeiming个人博客

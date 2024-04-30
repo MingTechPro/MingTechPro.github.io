@@ -1,1 +1,1 @@
-# MingTechPro.github.io
+MingTechPro.github.io

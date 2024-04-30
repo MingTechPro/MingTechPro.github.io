@@ -1,0 +1,104 @@
+# Hexo配置
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# 网站
+title: MingTechPro # 网站标题
+subtitle: "This is MingTechPro's personal blog." # 网站副标题
+description: "人性的背后是白云苍狗，愿你我都是生活的高手" # 网站描述
+keywords: # 网站的关键词,支持多个关键词
+author: MingTechPro # 您的名字
+language: zh-CN # 语言：default(en)，zh-CN (简体中文)，zh-TW (繁体中文)
+timezone: "Asia/Shanghai" # 设置网站时区，Hexo 默认使用您电脑的时区（查询时区：https://en.wikipedia.org/wiki/List_of_tz_database_time_zones）
+
+# 网站链接
+## 例如，如果您使用Git Hub Page，请将url设置为 'https://username.github.io/project'
+url: https://mingtechpro.top
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false # 设置为false将从永久链接中删除尾随索引html
+  trailing_html: false # 设置为false将从永久链接中删除尾随html
+
+# 目录
+source_dir: source # 资源文件夹，这个文件夹用来存放内容
+public_dir: public # 公共文件夹，这个文件夹用于存放生成的站点文件
+tag_dir: tags # 标签文件夹
+archive_dir: archives # 归档文件夹
+category_dir: categories # 分类文件夹
+code_dir: downloads/code # Include code 文件夹，source_dir 下的子目录
+i18n_dir: :lang # 国际化（i18n）文件夹
+skip_render: # 跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。
+
+# 文章
+new_post_name: :title.md # 新文章的文件名称
+default_layout: post # 预设布局
+titlecase: false # 把标题转换为 title case
+external_link:
+  enable: true # 在新选项卡中打开外部链接
+  field: site # site: 对整个网站生效/post: 仅对文章生效
+  exclude: "" # 需要排除的域名。主域名和子域名如 www 需分别配置
+filename_case: 0 # 把文件名称转换为 (1) 小写或 (2) 大写
+render_drafts: false # 显示草稿
+post_asset_folder: false # 启用 资源文件夹
+relative_link: true # 把链接改为与根目录的相对地址
+future: true # 显示未来的文章
+syntax_highlighter: highlight.js # 代码块高亮的设置
+# 代码块的设置
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ""
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ""
+
+# 首页设置
+index_generator:
+  path: "/" # path 默认的博客索引页的根路径
+  per_page: 8 # 每页显示的帖子，(0 = 关闭分页功能)
+  order_by: -date # 默认情况下按日期降序排序
+
+# 类别 & 标签 设置
+default_category: uncategorized # 默认分类
+category_map: # 分类别名
+tag_map: # 标签别名
+
+# 元数据元素 设置
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# 日期 / 时间格式 设置
+## Hexo使用Moment js来解析和显示日期
+## 可以自定义日期格式
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD # 日期格式
+time_format: HH:mm:ss # 时间格式
+## 更新的选项支持 'mtime', 'date', 'empty'
+updated_option: "mtime"
+
+# 分页设置
+per_page: 8 # 每页显示的文章量 (0 = 关闭分页功能)
+pagination_dir: page # 分页目录
+
+# 主题设置
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: butterfly # 设置当前主题名称。值为false时禁用主题
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: ""
+
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
