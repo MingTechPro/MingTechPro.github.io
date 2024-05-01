@@ -1,13 +1,14 @@
 ---
 layout: post
-date: 2023-12-13/16:49:59
+date: '2023-12-13/16:49:59'
 title: Markdown 博客写作指南
-cover: 
 categories:
   - Markdown
 tags:
   - Markdown
   - 博客
+abbrlink: f909e55e
+cover:
 ---
 
 手把手教你如何在博客写文章，

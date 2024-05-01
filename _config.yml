@@ -14,7 +14,7 @@ timezone: "Asia/Shanghai" # 设置网站时区，Hexo 默认使用您电脑的�
 # 网站链接
 ## 例如，如果您使用Git Hub Page，请将url设置为 'https://username.github.io/project'
 url: https://mingtechpro.top
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # 设置为false将从永久链接中删除尾随索引html
@@ -110,3 +110,27 @@ search:
   field: post
   content: true
   format: html
+
+# 短链接设置
+abbrlink:
+  alg: crc32      #支持 crc16(默认) 或者 crc32
+  rep: hex        #支持 dec(默认) 或者 hex
+  drafts: false   #(true)流程草搞,(false)不处理草稿. false(默认) 
+  # 从目录树生成类别
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(默认)
+     depth:        #3(默认)
+     over_write: false 
+  auto_title: true #启用自动标题，可以按路径自动填充标题
+  auto_date: false #启用自动日期，它可以自动填写日期的时间今天
+  force: false #在这种模式下，插件将忽略缓存并计算每个帖子的abbrlink，即使它已经有了abbrlink。这只更新abbrlink而不是其他前端变量
+
+# RSS订阅
+feed:
+  # 指定生成的 Feed 类型为 rss2
+  type: rss2
+  # 指定生成的 Feed 文件的路径和文件名
+  path: feed.xml
+  # 限制 Feed 中包含的文章数量为 100 篇
+  limit: 100

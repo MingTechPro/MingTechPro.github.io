@@ -1,13 +1,15 @@
 ---
 layout: post
-date: 2023-12-12/16:50:28
+date: '2023-12-12/16:50:28'
 title: 使用 Jekyll 在 GitHub 上搭建个人博客
-cover: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/img_url/202404272114901.jpg
+cover: >-
+  https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/img_url/202404272114901.jpg
 categories:
   - Jekyll
 tags:
   - Jekyll
   - 博客
+abbrlink: 94ec1eda
 ---
 
 搭建流程：

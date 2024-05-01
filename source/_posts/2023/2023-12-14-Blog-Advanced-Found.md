@@ -1,14 +1,16 @@
 ---
 layout: post
-date: 2023-12-14/16:45:20
+date: '2023-12-14/16:45:20'
 title: Markdown 进阶写作指南
-cover: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/img_url/202404272114346.jpg
+cover: >-
+  https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/img_url/202404272114346.jpg
 categories:
   - Markdown
 tags:
   - Markdown
   - 博客
 mathjax: true
+abbrlink: 2b5beace
 ---
 
 9个Markdown文档进阶写作技巧分享：
