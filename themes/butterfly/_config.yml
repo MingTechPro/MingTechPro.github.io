@@ -366,13 +366,13 @@ katex:
 
 # Algolia 搜索
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 6
 
 # 局部搜索
 local_search:
-  enable: false
+  enable: true
   # 在页面加载时预加载搜索数据
   preload: false
   # 显示每篇文章的前n个结果, 设置为1显示所有结果
@@ -564,7 +564,7 @@ messenger:
 
 # 百度分析
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: ce4c8dec8a0d12b05e7381a115cee0a6
 
 # 谷歌分析
 # https://analytics.google.com/analytics/web/
@@ -927,6 +927,8 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    # 百度站长验证
+    - <meta name="baidu-site-verification" content="codeva-bwmB3nfeCE" />
   bottom:
     # - <script src="xxxx"></script>
 
