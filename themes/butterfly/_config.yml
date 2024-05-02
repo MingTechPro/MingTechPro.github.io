@@ -212,7 +212,7 @@ footer:
   owner:
     enable: true
     since: 2024 # 展示你站点起始时间
-  custom_text: All articles in this blog are licensed under CC BY-NC-SA 4.0 unless stating additionally. # 是一个给你用来在页脚自定义文本的选项。通常你可以在这里写声明文本等。支持 HTML。
+  custom_text: <img src="https://icp.gov.moe/favicon.ico" style="position:relative;top:4px;" width="20px" height="20px"><a href="https://icp.gov.moe/?keyword=20249006" target="_blank">萌ICP备20249006号</a> <br> All articles in this blog are licensed under CC BY-NC-SA 4.0 unless stating additionally. # 是一个给你用来在页脚自定义文本的选项。通常你可以在这里写声明文本等。支持 HTML。
   copyright: true # 主题和框架的版权
 
 # aside (侧边栏)
