@@ -14,6 +14,7 @@ menu:
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   清单||fa fa-heartbeat:
+    数据图表: /datachart/ || fas fa-chart-pie
     书签: /bookmark/ || fas fa-book
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
@@ -141,7 +142,7 @@ photofigcaption: false
 copy:
   enable: true # 是否开启网站复制权限
   copyright: # 复制的内容后面加上版权信息
-    enable: false # 是否开启复制版权信息添加
+    enable: true # 是否开启复制版权信息添加
     limit_count: 10 # 字数限制，当复制文字大于这个字数限制时，将在复制的内容后面加上版权信息
 
 # Post
@@ -238,7 +239,7 @@ aside:
       link: https://github.com/MingTechPro
   card_announcement:
     enable: true
-    content: This is my Blog.
+    content: 欢迎来到 MingTechPro 的个人博客
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0，将显示所有
@@ -333,12 +334,12 @@ darkmode:
 rightside_scroll_percent: false
 
 # Don't modify the following settings unless you know how they work (非必要请不要修改)
-# 选择读模式翻译暗模式隐藏旁边聊天评论
-# Don't repeat 不要重复
+# 选择项：toc:返回顶部 | readmode:阅读模式 | translate:翻译 | darkmode:暗模式 | hideAside:隐藏旁边 | chat:聊天 | comment:评论
+# Don't repeat (不要重复)
 rightside_item_order:
-  enable: false
-  hide: # readmode,translate,darkmode,hideAside
-  show: # toc,chat,comment
+  enable: true
+  hide: readmode,darkmode,hideAside,chat
+  show: toc,comment,translate
 
 # Math (数学)
 # --------------------------------------
@@ -410,7 +411,7 @@ addtoany:
 comments:
   # 最多两个评论系统，第一个将显示为默认值
   # 选择: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Valine,Disqus # 使用的评论（请注意，最多支持两个，如果不需要请留空）注意：双评论不能是 Disqus 和 Disqusjs 一起，由于其共用同一个 ID，会出错
+  use: Valine,关闭 # 使用的评论（请注意，最多支持两个，如果不需要请留空）注意：双评论不能是 Disqus 和 Disqusjs 一起，由于其共用同一个 ID，会出错
   text: true # 是否显示评论服务商的名字
   # 当评论元素进入浏览器的视口时，将加载评论系统
   # 如果将其设置为true，则评论计数将无效
@@ -665,7 +666,7 @@ mask:
   footer: true
 
 # 右下角按钮距离底部的距离/默认单位为px
-rightside_bottom: 180px
+rightside_bottom: 
 
 # 开启网页进入效果
 enter_transitions: true
@@ -837,11 +838,11 @@ mermaid:
 
 # Note (Bootstrap Callout)
 note:
-  # Note tag style values:
+  # 注意标签样式值:
   #  - simple    bs-callout old alert style. Default.
   #  - modern    bs-callout new (v2-v3) alert style.
-  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
-  #  - disabled  disable all CSS styles import of note tag.
+  #  - flat      平面标注样式与背景，如Mozilla或Stack Overflow
+  #  - disabled  禁用所有CSS样式导入注释标签
   style: simple
   icons: true
   border_radius: 3
@@ -926,6 +927,8 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    # 博客文章统计图
+    - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
 
   bottom:
     # - <script src="xxxx"></script>
