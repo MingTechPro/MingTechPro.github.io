@@ -55,8 +55,6 @@ function postsChart (startMonth) {
 
   return `
   <script id="postsChart">
-  // 页面加载完成后初始化图表
-  window.onload = function() {
     var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
     var postsChart = echarts.init(document.getElementById('posts-chart'), 'light');
     var postsOption = {
@@ -162,7 +160,7 @@ function postsChart (startMonth) {
     });
     postsChart.on('click', 'series', (event) => {
       if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
-    });}
+    });
   </script>`
 }
 
