@@ -4,7 +4,7 @@ date: 2024-05-03 19:57:53
 ---
 
 <!-- 文章发布时间统计图 -->
-<div id="posts-chart" data-start="2023-10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+<div id="posts-chart" data-start="2023-10" style="border-radius: 8px; height: 300px; padding: 10px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;"></div>
 <!-- 文章标签统计图 -->
 <div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
 <!-- 文章分类统计图 -->
