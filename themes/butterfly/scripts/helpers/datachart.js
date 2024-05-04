@@ -156,7 +156,7 @@ function postsChart (startMonth) {
     };
     setTimeout(function() {
       postsChart.setOption(postsOption);
-    }, 100);
+    }, 5000);
     window.addEventListener('resize', () => { 
       postsChart.resize();
     });
