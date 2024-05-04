@@ -393,15 +393,5 @@ function categoriesChart (dataParent) {
     categoriesChart.on('click', 'series', (event) => {
       if(event.data.path) window.location.href = '/' + event.data.path;
     });
-    
-    function refreshOnce() {
-      // 检查是否已经存在标记
-      if (!sessionStorage.getItem('refreshed')) {
-          // 如果标记不存在，则执行刷新操作
-          location.reload();
-          // 设置标记，表示已经刷新过一次
-          sessionStorage.setItem('refreshed', 'true');
-      }
-    }
   </script>`
 }
