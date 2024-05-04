@@ -162,7 +162,7 @@ function postsChart (startMonth) {
     postsChart.on('click', 'series', (event) => {
       if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
     });
-  }, 100);
+  }, 200);
   </script>`
 }
 
