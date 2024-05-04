@@ -156,13 +156,13 @@ function postsChart (startMonth) {
     };
     setTimeout(function() {
       postsChart.setOption(postsOption);
-      window.addEventListener('resize', () => { 
-        postsChart.resize();
-      });
-      postsChart.on('click', 'series', (event) => {
-        if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
-      });
     }, 100);
+    window.addEventListener('resize', () => { 
+      postsChart.resize();
+    });
+    postsChart.on('click', 'series', (event) => {
+      if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
+    });
   </script>`
 }
 
