@@ -30,7 +30,7 @@ hexo.extend.filter.register('after_render:html', function (locals) {
   } else {
     return locals
   }
-}, 15)
+}, 200)
 
 function postsChart (startMonth) {
   const startDate = moment(startMonth || '2020-01')
