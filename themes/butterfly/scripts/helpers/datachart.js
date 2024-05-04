@@ -55,7 +55,6 @@ function postsChart (startMonth) {
 
   return `
   <script id="postsChart">
-  setTimeout(function() {
     var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
     var postsChart = echarts.init(document.getElementById('posts-chart'), 'light');
     var postsOption = {
@@ -155,14 +154,15 @@ function postsChart (startMonth) {
         }
       }]
     };
-    postsChart.setOption(postsOption);
-    window.addEventListener('resize', () => { 
-      postsChart.resize();
-    });
-    postsChart.on('click', 'series', (event) => {
-      if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
-    });
-  }, 200);
+    setTimeout(function() {
+      postsChart.setOption(postsOption);
+      window.addEventListener('resize', () => { 
+        postsChart.resize();
+      });
+      postsChart.on('click', 'series', (event) => {
+        if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
+      });
+    }, 100);
   </script>`
 }
 
