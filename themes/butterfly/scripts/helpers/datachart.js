@@ -30,7 +30,7 @@ hexo.extend.filter.register('after_render:html', function (locals) {
   } else {
     return locals
   }
-}, 200)
+}, 15)
 
 function postsChart (startMonth) {
   const startDate = moment(startMonth || '2020-01')
@@ -395,3 +395,7 @@ function categoriesChart (dataParent) {
     });
   </script>`
 }
+
+window.addEventListener('resize', function () {
+    myChart.resize();
+});
