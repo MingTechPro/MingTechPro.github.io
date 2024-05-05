@@ -16,6 +16,5 @@ date: 2024-05-03 19:57:53
 {% endnote %}
 
 {% note danger flat %}
-特别注意：
-如使用 Cloudflare 解析域名，请不要打开 `Rocket Loader™` 否则将无法正常显示图表
+<font color=Red>特别注意：</font>如使用 Cloudflare 解析域名，请不要打开 `Rocket Loader™` 否则将无法正常显示图表
 {% endnote %}

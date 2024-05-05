@@ -10,7 +10,7 @@ BOSS存在时长：2001-现在
 
 BOSS职业：（信息未公开）
 
-BOSS能力：会做网站 会做程序 会剪片子……
+BOSS能力：会做网站 会做程序 会剪片子 会做饭 会摄影……
 
 BOSS沟通语言：Java、PHP、HTML、CSS、JavaScript、JQuery、SpringBoot、MySQL、MongoDB
 
@@ -19,7 +19,7 @@ BOSS出没时间：目前是整天
 人格：<a target="_blank" href="https://www.16personalities.com/ch/infp-%E4%BA%BA%E6%A0%BC">“调停者” 人格 (INFP-T) | 16Personalities</a>
 
 联系方式：
-- ✉️Mail：<a href="mailto:{chenpeiming52001@163.com">ChenPeiMing52001@163.com</a>
+- ✉️Mail：<a href="mailto:chenpeiming52001@163.com" > ChenPeiMing52001@163.com </a>
 
 - <i class="fab fa-github"></i>GitHub：<a target="_blank" href="https://github.com/MingTechPro">MingTechPro</a>
 
