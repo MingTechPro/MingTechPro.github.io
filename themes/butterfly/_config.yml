@@ -48,7 +48,7 @@ favicon: /img/favicon.png
 
 # Avatar (头像)
 avatar:
-  img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404272112048.jpg
+  img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051658049.jpg
   effect: false # true：头像会一直转圈
 
 # 禁用所有横幅图像
@@ -58,7 +58,7 @@ disable_top_img: false
 index_img:
 
 # 如果页面的横幅没有设置，它将显示顶部的图片
-default_top_img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404272114713.jpg
+default_top_img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051659906.jpg
 
 # 存档页面的横幅图像
 archive_img:
@@ -91,7 +91,7 @@ cover:
   position: both
   # 当未设置封面时，显示默认封面 (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404272114713.jpg
+    - https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051659906.jpg
 
 # 替换损坏的图像 (替換無法顯示的圖片)
 error_img:
@@ -102,7 +102,7 @@ error_img:
 error_404:
   enable: true
   subtitle: "页面未找到"
-  background: https://www.runoob.com/wp-content/themes/runoob/assets/img/404.jpg
+  background: /img/404.jpg
 
 post_meta:
   page: # 首页
@@ -167,15 +167,15 @@ post_copyright:
 
 # Sponsor/reward 赞助商/奖励
 reward:
-  enable: false
+  enable: true
   text:
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+    - img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051708051.jpg
+      link:
+      text: 微信赞赏
+    - img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051710278.jpg
+      link:
+      text: 支付宝
 
 # Post edit 文章编辑
 # 轻松浏览和编辑博客源代码在线
@@ -454,7 +454,7 @@ valine:
   appKey: GCoQwjbv8HyOl6bzPZtwIPTN # Leancloud应用程序key
   avatar: monsterid # 功能风格 https://valine.js.org/#/avatar
   serverURLs: https://gvkllnht.lc-cn-n1-shared.com # 此配置适用于国内自定义域名用户，海外版本会自动检测，无需手动填写
-  bg: https://butterfly.js.org/img/comment_bg.png # valine 背景
+  bg: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051711593.png # valine 背景
   visitor: false
   option:
 
@@ -892,7 +892,7 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder:
+  placeholder: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051713935.gif
   blur: false
 
 # PWA

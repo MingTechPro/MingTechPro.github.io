@@ -5,7 +5,7 @@ type: "link"
 ---
 
 <br>
-{% note warning flat %}
+{% note warning no-icon %}
 ## 友链模板
 
 - Blog 名字： MingTechPro

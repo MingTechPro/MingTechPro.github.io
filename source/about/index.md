@@ -2,7 +2,7 @@
 title: about
 date: 2024-04-30 01:25:01
 ---
-noopenerBOSS名称：MingTechPro
+BOSS名称：MingTechPro
 
 BOSS暴露时间：2024-4-26
 

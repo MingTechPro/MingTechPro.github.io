@@ -3,7 +3,7 @@ layout: post
 date: '2023-12-14/16:45:20'
 title: Markdown 进阶写作指南
 cover: >-
-  https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404272114346.jpg
+  https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404272114346.jpg
 categories:
   - Markdown
 tags:

@@ -46,23 +46,23 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
 - 2.在 [Akismet](https://wordpress.com/start/account/user-social?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fakismet.com%252Faccount%252F) 上注册并登录账号。
 
-![注册Akismet](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300038985.png)
-![注册Akismet](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300039525.png)
+![注册Akismet](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300038985.png)
+![注册Akismet](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300039525.png)
 
 - 3.注册后，确认你的邮箱以完成登录。
 
 - 4.进入[服务页面](https://akismet.com/pricing/)，选择适合你的服务。
 
-![选择Akismet服务](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300039375.png)
+![选择Akismet服务](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300039375.png)
 
 - 5.根据你的需求选择付费金额，如果你选择免费版本，请注意不能用于商业活动。
 
-![选择Akismet服务](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300039478.png)
+![选择Akismet服务](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300039478.png)
 
 - 6.我这里选择免费，确认付款信息，然后你就可以获得到 Api 。
 
-![确认服务费用](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300040419.png)
-![确认服务费用](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300040054.png) -->
+![确认服务费用](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300040419.png)
+![确认服务费用](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300040054.png) -->
 
 ## 获取 valine-admin 项目
 
@@ -76,23 +76,23 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
 - 1.在 [LeanCloud](https://console.leancloud.cn/) 上登录并创建云引擎
 
-  ![创建云引擎](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300040076.png)
-  ![创建云引擎](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300040534.png)
-  ![创建云引擎](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300040808.png)
+  ![创建云引擎](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300040076.png)
+  ![创建云引擎](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300040534.png)
+  ![创建云引擎](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300040808.png)
 
 - 2.通过 Git 方式部署项目
 
-  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300041197.png)
-  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300041104.png)
-  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300041194.png)
-  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300041737.png)
-  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300041016.png)
-  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300041009.png)
+  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300041197.png)
+  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300041104.png)
+  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300041194.png)
+  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300041737.png)
+  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300041016.png)
+  ![部署项目](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300041009.png)
 
 ## 配置项目环境变量
 
-![环境变量](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300042051.png)
-![环境变量](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300042654.png)
+![环境变量](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300042051.png)
+![环境变量](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300042654.png)
 
 请按照以下表格填写相应的项目环境变量：
 
@@ -113,14 +113,14 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
 - 请注意，`email` 必须是 `SMTP_USER` 或 `TO_EMAIL` 中的一个
 
-  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300042458.png)
-  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300042100.png)
+  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300042458.png)
+  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300042100.png)
 
 - 配置访问域名（需要注册有域名）
 
-  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300046495.png)
-  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300046160.png)
-  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300046024.png)
+  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300046495.png)
+  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300046160.png)
+  ![后台管理](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300046024.png)
 
 绑定好后就可以登录后台管理评论信息，我没有域名就不做相关的演示了
 
@@ -130,21 +130,21 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
   - 评论
 
-  ![default](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300046287.png)
+  ![default](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300046287.png)
 
   - 回复评论
 
-  ![default](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300046316.png)
+  ![default](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300046316.png)
 
 - 邮件模板：rainbow
 
   - 评论
 
-  ![rainbow](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300048681.png)
+  ![rainbow](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300048681.png)
 
   - 回复评论
 
-  ![rainbow](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/img_url/202404300048647.png)
+  ![rainbow](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202404300048647.png)
 
 <br>
 
