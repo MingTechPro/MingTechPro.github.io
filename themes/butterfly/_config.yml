@@ -27,7 +27,7 @@ highlight_copy: true # 复制按钮
 highlight_lang: true # 显示代码语言
 highlight_shrink: false # true: 收缩代码块 / false: 展开代码块 | none: 展开代码块并隐藏按钮
 highlight_height_limit: false # 配置代码高度限制，超出的部分会隐藏，并显示展开按钮 单位: px
-code_word_wrap: false # true: 开启横向滚动条 false：关闭横向滚动条
+code_word_wrap: true # true: 关闭横向滚动条 | false：开启横向滚动条
 
 # Social Settings (社交图标设置)
 # formal:
@@ -143,7 +143,7 @@ copy:
   enable: true # 是否开启网站复制权限
   copyright: # 复制的内容后面加上版权信息
     enable: true # 是否开启复制版权信息添加
-    limit_count: 10 # 字数限制，当复制文字大于这个字数限制时，将在复制的内容后面加上版权信息
+    limit_count: 50 # 字数限制，当复制文字大于这个字数限制时，将在复制的内容后面加上版权信息
 
 # Post
 # --------------------------------------
@@ -415,7 +415,7 @@ comments:
   text: true # 是否显示评论服务商的名字
   # 当评论元素进入浏览器的视口时，将加载评论系统
   # 如果将其设置为true，则评论计数将无效
-  lazyload: true # 是否为评论开启lazyload，开启后，只有滚动到评论位置时才会加载评论所需要的资源
+  lazyload: false # 是否为评论开启lazyload，开启后，只有滚动到评论位置时才会加载评论所需要的资源
   count: true # 是否在文章顶部显示评论数, livere、Giscus 和 utterances 不支持评论数显示
   card_post_count: false # 是否在首页文章卡片显示评论数, gitalk、livere 、Giscus 和 utterances 不支持评论数显示
 # disqus
@@ -452,7 +452,7 @@ gitalk:
 valine:
   appId: GvKlLNhTSU8p3QrprXhwWAwM-gzGzoHsz # Leancloud应用程序id
   appKey: GCoQwjbv8HyOl6bzPZtwIPTN # Leancloud应用程序key
-  avatar: monsterid # 功能风格 https://valine.js.org/#/avatar
+  avatar: robohash # 头像风格 https://valine.js.org/#/avatar
   serverURLs: https://gvkllnht.lc-cn-n1-shared.com # 此配置适用于国内自定义域名用户，海外版本会自动检测，无需手动填写
   bg: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051711593.png # valine 背景
   visitor: false
@@ -751,8 +751,8 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font_link: 
+  font-family: 
 
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
@@ -790,7 +790,7 @@ preloader:
   # 2. pace (进度条)
   source: 2
   # pace 题目，主题 (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://cdn.jsdelivr.net/gh/MingTechPro/js-api-script-toolbox@main/barber-shop.css
+  pace_css_url: https://jsd.012700.xyz/gh/MingTechPro/js-api-script-toolbox@main/barber-shop.css
 
 # wordcount (字数统计)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
@@ -928,6 +928,8 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    # 提前与第三方域名建立连接
+    - <link rel="preconnect" href="https://jsd.012700.xyz">
     # 博客文章统计图
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
 
@@ -941,19 +943,19 @@ CDN:
   # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版的主題只能設置為 local )
-  internal_provider: local
+  internal_provider: custom
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # 当将其设置为本地时，您需要安装 hexo-butterfly-extjs
-  third_party_provider: jsdelivr
+  third_party_provider: custom
 
   # 将版本号添加到 url true或false
   version: true
 
   # 自定义格式
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format:
+  custom_format: https://jsd.012700.xyz/npm/${name}@${version}/${min_file}
 
   option:
     # abcjs_basic_js:

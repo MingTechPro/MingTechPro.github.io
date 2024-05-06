@@ -174,91 +174,93 @@ $$
 \end{Bmatrix}
 $$
 
-## 添加流程图、时序图和甘特图
+## 添加流程图、时序图、甘特图、类别图、状态图、饼型图、用户体验旅程图和 C4 图
 
 ### 横向流程图
 
 例如：
 
 ````markdown
-```mermaid
-graph LR
+{% mermaid %}
+flowchart LR
 A[方形] -->B(圆角)
     B --> C{条件a}
     C -->|a=1| D[结果1]
     C -->|a=2| E[结果2]
     F[横向流程图]
-```
+{% endmermaid %}
 ````
 
 演示：
 
-<pre class="mermaid">
-graph LR
+{% mermaid %}
+flowchart LR
 A[方形] -->B(圆角)
     B --> C{条件a}
     C -->|a=1| D[结果1]
     C -->|a=2| E[结果2]
     F[横向流程图]
-</pre>
+{% endmermaid %}
 
 ### 竖向流程图
 
 例如：
 
 ````markdown
-```mermaid
-graph TD
+{% mermaid %}
+flowchart TD
 A[方形] --> B(圆角)
     B --> C{条件a}
     C --> |a=1| D[结果1]
     C --> |a=2| E[结果2]
     F[竖向流程图]
-```
+{% endmermaid %}
 ````
 
 演示：
 
-<pre class="mermaid">
-graph TD
+{% mermaid %}
+flowchart TD
 A[方形] --> B(圆角)
     B --> C{条件a}
     C --> |a=1| D[结果1]
     C --> |a=2| E[结果2]
     F[竖向流程图]
-</pre>
+{% endmermaid %}
 
 ### UML时序图
 
 例如：
 
 ````markdown
-```sequence
+{% mermaid %}
+sequenceDiagram
 对象A->对象B: 对象B你好吗?（请求）
 Note right of 对象B: 对象B的描述
 Note left of 对象A: 对象A的描述(提示)
 对象B-->对象A: 我很好(响应)
 对象A->对象B: 你真的好吗？
-```
+{% endmermaid %}
 ````
 
 演示：
 
-<pre class="mermaid">
+{% mermaid %}
 sequenceDiagram
-  对象A->对象B: 对象B你好吗?（请求）
-  Note right of 对象B: 对象B的描述
-  Note left of 对象A: 对象A的描述(提示)
-  对象B-->对象A: 我很好(响应)
-  对象A->对象B: 你真的好吗？
-</pre>
+对象A->对象B: 对象B你好吗?（请求）
+Note right of 对象B: 对象B的描述
+Note left of 对象A: 对象A的描述(提示)
+对象B-->对象A: 我很好(响应)
+对象A->对象B: 你真的好吗？
+{% endmermaid %}
 
 ### UML复杂时序图
 
 例如：
 
 ````markdown
-```sequence
+{% mermaid %}
+sequenceDiagram
 Title: 标题：复杂使用
 对象A->对象B: 对象B你好吗?（请求）
 Note right of 对象B: 对象B的描述
@@ -270,76 +272,278 @@ Note left of 对象A: 对象A的描述(提示)
 Note over 小三,对象B: 我们是朋友
 participant C
 Note right of C: 没人陪我玩
-```
+{% endmermaid %}
 ````
 
 演示：
 
-<pre class="mermaid">
+{% mermaid %}
 sequenceDiagram
-  Title: 标题：复杂使用
-  对象A->对象B: 对象B你好吗?（请求）
-  Note right of 对象B: 对象B的描述
-  Note left of 对象A: 对象A的描述(提示)
-  对象B-->对象A: 我很好(响应)
-  对象B->小三: 你好吗
-  小三-->>对象A: 对象B找我了
-  对象A->对象B: 你真的好吗？
-  Note over 小三,对象B: 我们是朋友
-  participant C
-  Note right of C: 没人陪我玩
-</pre>
+Title: 标题：复杂使用
+对象A->对象B: 对象B你好吗?（请求）
+Note right of 对象B: 对象B的描述
+Note left of 对象A: 对象A的描述(提示)
+对象B-->对象A: 我很好(响应)
+对象B->小三: 你好吗
+小三-->>对象A: 对象B找我了
+对象A->对象B: 你真的好吗？
+Note over 小三,对象B: 我们是朋友
+participant C
+Note right of C: 没人陪我玩
+{% endmermaid %}
 
 ### 甘特图
 
 例如：
 ````markdown
-```mermaid
+{% mermaid %}
 %% 语法示例
-        gantt
-        dateFormat  YYYY-MM-DD
-        title 软件开发甘特图
-        section 设计
-        需求                      :done,    des1, 2014-01-06,2014-01-08
-        原型                      :active,  des2, 2014-01-09, 3d
-        UI设计                     :         des3, after des2, 5d
-    未来任务                     :         des4, after des3, 5d
-        section 开发
-        学习准备理解需求                      :crit, done, 2014-01-06,24h
-        设计框架                             :crit, done, after des2, 2d
-        开发                                 :crit, active, 3d
-        未来任务                              :crit, 5d
-        耍                                   :2d
-        section 测试
-        功能测试                              :active, a1, after des3, 3d
-        压力测试                               :after a1  , 20h
-        测试报告                               : 48h
-```
+gantt
+    section Section
+    dateFormat  YYYY-MM-DD
+    title 软件开发甘特图
+    section 设计
+    需求  : done,    des1, 2014-01-06,2014-01-08
+    原型  : active,  des2, 2014-01-09, 3d
+    UI设计  : des3, after des2, 5d
+    未来任务  : des4, after des3, 5d
+    section 开发
+    学习准备理解需求  : crit, done, 2014-01-06,24h
+    设计框架  : crit, done, after des2, 2d
+    开发  : crit, active, 3d
+    未来任务  : crit, 5d
+    耍  : 2d
+    section 测试
+    功能测试  : active, a1, after des3, 3d
+    压力测试  : after a1, 20h
+    测试报告  : 48h
+{% endmermaid %}
 ````
 
 演示：
 
-<pre class="mermaid">
-%% 语法示例
-        gantt
-        dateFormat  YYYY-MM-DD
-        title 软件开发甘特图
-        section 设计
-        需求                      :done,    des1, 2014-01-06,2014-01-08
-        原型                      :active,  des2, 2014-01-09, 3d
-        UI设计                     :         des3, after des2, 5d
-    未来任务                     :         des4, after des3, 5d
-        section 开发
-        学习准备理解需求                      :crit, done, 2014-01-06,24h
-        设计框架                             :crit, done, after des2, 2d
-        开发                                 :crit, active, 3d
-        未来任务                              :crit, 5d
-        耍                                   :2d
-        section 测试
-        功能测试                              :active, a1, after des3, 3d
-        压力测试                               :after a1  , 20h
-        测试报告                               : 48h
-</pre>
+{% mermaid %}
+gantt
+    section Section
+    dateFormat  YYYY-MM-DD
+    title 软件开发甘特图
+    section 设计
+    需求  : done,    des1, 2014-01-06,2014-01-08
+    原型  : active,  des2, 2014-01-09, 3d
+    UI设计  : des3, after des2, 5d
+    未来任务  : des4, after des3, 5d
+    section 开发
+    学习准备理解需求  : crit, done, 2014-01-06,24h
+    设计框架  : crit, done, after des2, 2d
+    开发  : crit, active, 3d
+    未来任务  : crit, 5d
+    耍  : 2d
+    section 测试
+    功能测试  : active, a1, after des3, 3d
+    压力测试  : after a1, 20h
+    测试报告  : 48h
+{% endmermaid %}
+
+### 类别图
+
+例如：
+````markdown
+{% mermaid %}
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+<<Interface>> Class01
+Class09 --> C2 : 我在哪里?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] 元素数据
+Class01 : size()
+Class01 : int 黑猩猩
+Class01 : int 大猩猩
+class Class10 {
+  <<service>>
+  int id
+  size()
+}
+{% endmermaid %}
+````
+
+演示：
+
+{% mermaid %}
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+<<Interface>> Class01
+Class09 --> C2 : 我在哪里?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] 元素数据
+Class01 : size()
+Class01 : int 黑猩猩
+Class01 : int 大猩猩
+class Class10 {
+  <<service>>
+  int id
+  size()
+}
+{% endmermaid %}
+
+### 状态图
+
+例如：
+````markdown
+{% mermaid %}
+stateDiagram-v2
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+{% endmermaid %}
+````
+
+演示：
+
+{% mermaid %}
+stateDiagram-v2
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+{% endmermaid %}
+
+### 饼型图
+
+例如：
+````markdown
+{% mermaid %}
+pie
+"狗" : 386
+"猫" : 85
+"其他" : 15
+{% endmermaid %}
+````
+
+演示：
+
+{% mermaid %}
+pie
+"狗" : 386
+"猫" : 85
+"其他" : 15
+{% endmermaid %}
+
+### 用户体验旅程图
+
+例如：
+````markdown
+{% mermaid %}
+  journey
+    title 我的工作日
+    section 上班
+      泡茶: 5: Me
+      上楼: 3: Me
+      工作: 1: Me, Cat
+    section 回家
+      下楼: 5: Me
+      坐下: 3: Me
+{% endmermaid %}
+````
+
+演示：
+
+{% mermaid %}
+  journey
+    title 我的工作日
+    section 上班
+      泡茶: 5: Me
+      上楼: 3: Me
+      工作: 1: Me, Cat
+    section 回家
+      下楼: 5: Me
+      坐下: 3: Me
+{% endmermaid %}
+
+### C4 图
+
+例如：
+````markdown
+{% mermaid %}
+C4Context
+title System Context diagram for Internet Banking System
+
+Person(customerA, "Banking Customer A", "A customer of the bank, with personal bank accounts.")
+Person(customerB, "Banking Customer B")
+Person_Ext(customerC, "Banking Customer C")
+System(SystemAA, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
+
+Person(customerD, "Banking Customer D", "A customer of the bank, <br/> with personal bank accounts.")
+
+Enterprise_Boundary(b1, "BankBoundary") {
+
+  SystemDb_Ext(SystemE, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+
+  System_Boundary(b2, "BankBoundary2") {
+    System(SystemA, "Banking System A")
+    System(SystemB, "Banking System B", "A system of the bank, with personal bank accounts.")
+  }
+
+  System_Ext(SystemC, "E-mail system", "The internal Microsoft Exchange e-mail system.")
+  SystemDb(SystemD, "Banking System D Database", "A system of the bank, with personal bank accounts.")
+
+  Boundary(b3, "BankBoundary3", "boundary") {
+    SystemQueue(SystemF, "Banking System F Queue", "A system of the bank, with personal bank accounts.")
+    SystemQueue_Ext(SystemG, "Banking System G Queue", "A system of the bank, with personal bank accounts.")
+  }
+}
+
+BiRel(customerA, SystemAA, "Uses")
+BiRel(SystemAA, SystemE, "Uses")
+Rel(SystemAA, SystemC, "Sends e-mails", "SMTP")
+Rel(SystemC, customerA, "Sends e-mails to")
+{% endmermaid %}
+````
+
+演示：
+
+{% mermaid %}
+C4Context
+title System Context diagram for Internet Banking System
+
+Person(customerA, "Banking Customer A", "A customer of the bank, with personal bank accounts.")
+Person(customerB, "Banking Customer B")
+Person_Ext(customerC, "Banking Customer C")
+System(SystemAA, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
+
+Person(customerD, "Banking Customer D", "A customer of the bank, <br/> with personal bank accounts.")
+
+Enterprise_Boundary(b1, "BankBoundary") {
+
+  SystemDb_Ext(SystemE, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+
+  System_Boundary(b2, "BankBoundary2") {
+    System(SystemA, "Banking System A")
+    System(SystemB, "Banking System B", "A system of the bank, with personal bank accounts.")
+  }
+
+  System_Ext(SystemC, "E-mail system", "The internal Microsoft Exchange e-mail system.")
+  SystemDb(SystemD, "Banking System D Database", "A system of the bank, with personal bank accounts.")
+
+  Boundary(b3, "BankBoundary3", "boundary") {
+    SystemQueue(SystemF, "Banking System F Queue", "A system of the bank, with personal bank accounts.")
+    SystemQueue_Ext(SystemG, "Banking System G Queue", "A system of the bank, with personal bank accounts.")
+  }
+}
+
+BiRel(customerA, SystemAA, "Uses")
+BiRel(SystemAA, SystemE, "Uses")
+Rel(SystemAA, SystemC, "Sends e-mails", "SMTP")
+Rel(SystemC, customerA, "Sends e-mails to")
+{% endmermaid %}
 
 ## 添加注意事项
 
