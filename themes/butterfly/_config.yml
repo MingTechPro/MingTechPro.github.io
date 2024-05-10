@@ -450,15 +450,15 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: Mkn1gZde6pnyFYm53vqzKEwD-MdYXbMMI # Leancloud应用程序id
-  appKey: nPpc7D3EiT0GG9BpYGbvpxwo # Leancloud应用程序key
+  appId: duwrE4FlniUVljqtyZpMTj4m-gzGzoHsz # Leancloud应用程序id
+  appKey: TqwI8dJQ8kd5I9PfyXRslmrl # Leancloud应用程序key
   avatar: robohash # 头像风格 https://valine.js.org/#/avatar
-  serverURLs: # 此配置适用于国内自定义域名用户，海外版本会自动检测，无需手动填写
+  serverURLs: https://duwre4fl.lc-cn-n1-shared.com # 此配置适用于国内自定义域名用户，海外版本会自动检测，无需手动填写
   bg: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051711593.png # valine 背景
   visitor: false
   option:
     placeholder: |
-      👨‍🔧本站已启用Akismet反垃圾评论~
+      🔏本站已启用Akismet反垃圾评论~
       🚀评论和回复支持M↓
 
 # 一个简单的评论系统与后端支持从Valine分叉
@@ -1015,6 +1015,6 @@ CDN:
     # twikoo:
     # typed:
     # utils:
-    # valine:
+    # valine: https://unpkg.com/valine-unpkg-avmin@0.0.1/dist/Valine.min.js
     # waline_css:
     # waline_js:
