@@ -2,6 +2,12 @@
 title: 书签
 date: 2024-04-30 01:15:56
 ---
+
+{% note info flat %}
+## 目录
+[#Markdown](#Markdown) [#前端 web UI/框架](#前端-web-UI-框架) [#JavaScript](#JavaScript) [#CSS](#CSS) [#AI 工具](#AI-工具) [#images 图片](#images-图片)
+{% endnote %}
+
 ## Markdown
 
 - [Markdown 中文参考手册](https://www.markdown.xyz/) - 让你学会编写Markdown文档
