@@ -413,7 +413,7 @@ addtoany:
 comments:
   # 最多两个评论系统，第一个将显示为默认值
   # 选择: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Valine,关闭 # 使用的评论（请注意，最多支持两个，如果不需要请留空）注意：双评论不能是 Disqus 和 Disqusjs 一起，由于其共用同一个 ID，会出错
+  use: Waline,关闭 # 使用的评论（请注意，最多支持两个，如果不需要请留空）注意：双评论不能是 Disqus 和 Disqusjs 一起，由于其共用同一个 ID，会出错
   text: true # 是否显示评论服务商的名字
   # 当评论元素进入浏览器的视口时，将加载评论系统
   # 如果将其设置为true，则评论计数将无效
@@ -452,24 +452,27 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: duwrE4FlniUVljqtyZpMTj4m-gzGzoHsz # Leancloud应用程序id
-  appKey: TqwI8dJQ8kd5I9PfyXRslmrl # Leancloud应用程序key
-  avatar: robohash # 头像风格 https://valine.js.org/#/avatar
-  serverURLs: https://duwre4fl.lc-cn-n1-shared.com # 此配置适用于国内自定义域名用户，海外版本会自动检测，无需手动填写
-  bg: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051711593.png # valine 背景
+  appId: # Leancloud应用程序id
+  appKey: # Leancloud应用程序key
+  avatar: # 头像风格 https://valine.js.org/#/avatar
+  serverURLs: # 此配置适用于国内自定义域名用户，海外版本会自动检测，无需手动填写
+  bg:  # valine 背景
   visitor: false
   option:
-    placeholder: |
-      🔏本站已启用Akismet反垃圾评论~
-      🚀评论和回复支持M↓
 
 # 一个简单的评论系统与后端支持从Valine分叉
 # https://waline.js.org/
 waline:
-  serverURL: # Waline server address url
-  bg: # waline background
+  serverURL: https://waline.mingtechpro.top/ # Waline服务器地址url
+  bg: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051711593.png # waline背景
   pageview: false
   option:
+    emoji: [
+      'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
+      'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+      'https://unpkg.com/@waline/emojis@1.2.0/weibo',
+    ]
+    lang: 'zh-CN'
 
 # utterances
 # https://utteranc.es/
@@ -937,6 +940,8 @@ inject:
     - <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "m8d4dvwgzi");</script>
     # 提前与第三方域名建立连接
     - <link rel="preconnect" href="https://jsd.012700.xyz">
+    # waline 评论 Meta 图标
+    - <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline-meta.css"/>
     # 博客文章统计图
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
 
