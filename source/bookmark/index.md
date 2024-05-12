@@ -37,7 +37,11 @@ date: 2024-04-30 01:15:56
 
 ## AI 工具
 
+- [AI工具盒](https://ai-bot.cn/) - 一站式人工智能工具集合网站
 - [AIchatOS](https://chat18.aichatos.xyz/) - 免费 ChatGPT-3.5 在线使用
+- [豆包-智能聊天机器人](https://www.doubao.com/) - 字节跳动推出的免费AI对话工具
+- [试试吧](https://try8.cn/) - 试试吧致力于打造领先的一站式在线工具平台
+- [AI图像分析](https://try8.cn/tool/ai/imgvision) - 根据图像和问题进行人工智能图像视觉分析
 
 ## images 图片
 
