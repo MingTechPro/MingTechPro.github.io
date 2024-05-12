@@ -456,7 +456,7 @@ valine:
   appKey: # Leancloud应用程序key
   avatar: # 头像风格 https://valine.js.org/#/avatar
   serverURLs: # 此配置适用于国内自定义域名用户，海外版本会自动检测，无需手动填写
-  bg:  # valine 背景
+  bg: # valine 背景
   visitor: false
   option:
 
@@ -467,12 +467,17 @@ waline:
   bg: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051711593.png # waline背景
   pageview: false
   option:
-    emoji: [
-      'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
-      'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
-      'https://unpkg.com/@waline/emojis@1.2.0/weibo',
-    ]
-    lang: 'zh-CN'
+    emoji:
+      [
+        "https://unpkg.com/@waline/emojis@1.2.0/bmoji",
+        "https://unpkg.com/@waline/emojis@1.2.0/bilibili",
+        "https://unpkg.com/@waline/emojis@1.2.0/weibo",
+      ]
+    lang: "zh-CN"
+    locale:
+      placeholder: |
+        🔏本站已启用Akismet反垃圾评论~
+        🚀评论和回复支持标准M↓
 
 # utterances
 # https://utteranc.es/
@@ -674,7 +679,7 @@ mask:
   footer: true
 
 # 右下角按钮距离底部的距离/默认单位为px
-rightside_bottom: 
+rightside_bottom:
 
 # 开启网页进入效果
 enter_transitions: true
@@ -759,8 +764,8 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
 blog_title_font:
-  font_link: 
-  font-family: 
+  font_link:
+  font-family:
 
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
