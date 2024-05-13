@@ -476,7 +476,9 @@ waline:
     lang: "zh-CN"
     locale:
       placeholder: |
-        🔏本站已启用Akismet反垃圾评论~
+        💬欢迎评论~
+        👾本站已开启QQ邮箱自动设置QQ头像功能~
+        🔏本站已启用Akismet反垃圾评论哟~
         🚀评论和回复支持标准M↓
 
 # utterances
