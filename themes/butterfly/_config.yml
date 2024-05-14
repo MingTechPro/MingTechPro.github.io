@@ -241,7 +241,7 @@ aside:
       link: https://github.com/MingTechPro
   card_announcement:
     enable: true
-    content: 欢迎来到 MingTechPro 的个人博客
+    content: 欢迎来到 MingTechPro 的个人博客 <br> <a href="https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png"><img width="100%" src="https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png"></a>
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0，将显示所有
