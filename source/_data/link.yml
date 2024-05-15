@@ -11,8 +11,8 @@
   class_desc: 项目稳定性？不存在的٩(๑•̀ω•́๑)۶
   link_list:
     - name: ChenPeiming.github.io
-      link: https://github.com/MingTechPro/ChenPeiming52001.github.io
-      avatar:
+      link: https://github.com/MingTechPro/ChenPeiming52001.github.io/
+      avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405160046279.svg
       descr: Power by Yummy Jekyll & Revised by Chen Peiming.
 
     - name: js-api-script-toolbox
@@ -28,11 +28,6 @@
       avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405060150773.png
       descr: 全球最大的代码仓库
 
-    - name: Leancloud
-      link: https://console.leancloud.cn/
-      avatar: https://console.leancloud.cn/favicon.ico
-      descr: 评论系统的后端
-
     - name: Cloudflare
       link: https://dash.cloudflare.com/
       avatar: https://dash.cloudflare.com/apple-touch-icon-144x144.png
@@ -43,15 +38,50 @@
       avatar: https://www.jsdelivr.com/icons/favicon.svg
       descr: 一个免费开源文件 CDN（内容分发网络）服务商
 
+    - name: Leancloud
+      link: https://console.leancloud.cn/
+      avatar: https://console.leancloud.cn/favicon.ico
+      descr: 评论系统的后端数据库
+
+    - name: Vercel
+      link: https://vercel.com/
+      avatar: https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png
+      descr: 一个网站托管平台，提供高效创建和部署Web应用程序的服务商
+
 - class_name: TROIS 友人帐
   class_descr: 一群可可爱爱的小伙伴
   link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-cn/
+      avatar: https://hexo.io/icon/favicon-196x196.png
+      descr: ⼀个快速, 简洁且⾼效的博客框架
+
+    - name: Waline
+      link: https://waline.js.org/
+      avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405160042176.png
+      descr: 一款从 Valine 衍生的带后端评论系统
+
     - name: ChenPeiming
       link: https://mingtechpro.github.io/ChenPeiming52001.github.io/
-      avatar:
+      avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405160046279.svg
       descr: ChenPeiming个人博客
 
     - name: 小玉石的博客
-      link: //bl-sun.github.io
+      link: //bl-sun.github.io/
       avatar: //bl-sun.github.io/-/img/avatar.jpeg
       descr: 爱生活，爱自己
+
+    - name: 拔剑Sketon
+      link: https://d-sketon.top/
+      avatar: https://d-sketon.top/img/icon/icon.png
+      descr: 这个人很神秘，什么都没有留下
+
+    - name: Rickyxrc
+      link: https://blog.rickyxrc.cc/
+      avatar: https://cdn.rickyxrc.cc/head/512.png
+      descr: 我是rickyxrc，为营造更好的网络环境和一个更好的明天而不懈奋斗。
+
+    - name: ztr 的小窝
+      link: https://ztrztr.top/
+      avatar: https://ztrztr.top/wp-content/uploads/2024/01/cropped-cropped-602124.webp
+      descr: 记录 ztr 的学习与生活。
