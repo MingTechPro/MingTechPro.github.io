@@ -134,3 +134,8 @@ feed:
   path: feed.xml
   # 限制 Feed 中包含的文章数量为 100 篇
   limit: 100
+
+# 音乐播放器 关闭asset_inject
+aplayer:
+  meting: true
+  asset_inject: false

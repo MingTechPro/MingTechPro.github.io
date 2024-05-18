@@ -881,7 +881,7 @@ pjax:
 
 # 引入 css 和 script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -955,6 +955,8 @@ inject:
 
   bottom:
     # - <script src="xxxx"></script>
+    # 音乐播放器
+    - <div class="aplayer no-destroy" data-id="10068338814" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.2" data-lrctype="0"></div>
 
 # CDN
 # 不要修改以下设置，除非您知道它们是如何工作的
