@@ -126,7 +126,7 @@ post_meta:
 # 3: auto_excerpt (默认)
 # false: 不展示文章介绍
 index_post_content:
-  method: 3
+  method: 2
   length: 500 # 如果method为“2”或“3”，则长度需要配置
 
 # 锚点
