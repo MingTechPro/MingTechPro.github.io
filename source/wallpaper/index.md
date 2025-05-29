@@ -4,6 +4,7 @@ date: 2024-05-11 16:18:29
 ---
 
 {% gallery true,,20 %}
+![](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202505292002686.jpg)
 ![](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/wallpaper/202405271041306.jpg)
 ![](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/wallpaper/202405271045578.png)
 ![](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/wallpaper/202405271046525.jpg)

@@ -60,7 +60,7 @@ disable_top_img: false
 index_img:
 
 # 如果页面的横幅没有设置，它将显示顶部的图片
-default_top_img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051659906.jpg
+default_top_img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202505292002686.jpg
 
 # 存档页面的横幅图像
 archive_img:
@@ -93,7 +93,7 @@ cover:
   position: both
   # 当未设置封面时，显示默认封面 (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051659906.jpg
+    - https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202505292002686.jpg
 
 # 替换损坏的图像 (替換無法顯示的圖片)
 error_img:
@@ -629,8 +629,8 @@ site_verification:
 
 theme_color:
   enable: true # 是否启用主题颜色，true 表示启用，false 表示禁用
-  main: "#49B1F5" # 主要主题颜色，用于页面背景、按钮等元素
-  paginator: "#00c4b6" # 分页器颜色，用于分页按钮等
+  main: "#ecbac7" # 主要主题颜色，用于页面背景、按钮等元素
+  paginator: "#ecbac7" # 分页器颜色，用于分页按钮等
   button_hover: "#FF7242" # 按钮悬停颜色，鼠标悬停时按钮的颜色
   text_selection: "#00c4b6" # 文本选择颜色，用于用户选中文本时的背景颜色
   link_color: "#99a9bf" # 链接颜色，用于超链接文本的颜色
@@ -639,9 +639,9 @@ theme_color:
   code_foreground: "#F47466" # 代码前景色，用于代码文本的前景颜色
   code_background: "rgba(27, 31, 35, .05)" # 代码背景色，用于代码块的背景颜色
   toc_color: "#00c4b6" # 目录颜色，用于文档目录的颜色
-  blockquote_padding_color: "#49b1f5" # 引用块填充颜色，用于引用块的填充颜色
-  blockquote_background_color: "#49b1f5" # 引用块背景颜色，用于引用块的背景颜色
-  scrollbar_color: "#49b1f5" # 滚动条颜色，用于滚动条的颜色
+  blockquote_padding_color: "#ecbac7" # 引用块填充颜色，用于引用块的填充颜色
+  blockquote_background_color: "#ecbac7" # 引用块背景颜色，用于引用块的背景颜色
+  scrollbar_color: "#ecbac7" # 滚动条颜色，用于滚动条的颜色
   meta_theme_color_light: "ffffff" # 元主题颜色（明亮模式），用于明亮模式下的元数据颜色
   meta_theme_color_dark: "#0d0d0d" # 元主题颜色（暗黑模式），用于暗黑模式下的元数据颜色
 
@@ -806,7 +806,7 @@ preloader:
   # 2. pace (进度条)
   source: 2
   # pace 题目，主题 (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://jsd.012700.xyz/gh/MingTechPro/js-api-script-toolbox@main/barber-shop.css
+  pace_css_url: css/barber-shop.css
 
 # wordcount (字数统计)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
@@ -891,7 +891,7 @@ aplayerInject:
 snackbar:
   enable: true
   position: bottom-left
-  bg_light: "#49b1f5" # The background color of Toast Notification in light mode
+  bg_light: "#ecbac7" # The background color of Toast Notification in light mode
   bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
 # https://instant.page/
