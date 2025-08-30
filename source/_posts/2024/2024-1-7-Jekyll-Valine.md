@@ -13,7 +13,6 @@ abbrlink: '673e8029'
 
 Valine 是一个基于 LeanCloud 的快速、简洁且高效的无后端评论系统。它具有强大的功能和灵活的配置选项，本文将向您介绍如何在 Valine-admin 中设置评论邮件提醒功能，以便及时收到用户对您博客的评论通知。
 
-
 ## 部署流程
 
 - 获取邮箱 SMTP 密钥
@@ -100,12 +99,12 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 | :-----------: | :----------------------------------------: | :--------------------------------: |
 |  SENDER_NAME  |                 寄件人名称                 |      ChenPeiming -- 评论提醒       |
 |   SITE_NAME   |               [必填]网站名称               |            ChenPeiming             |
-|   SITE_URL    |       [必填]网站地址，地址后方不带 /       | https://chenpeiming52001.github.io |
+|   SITE_URL    |       [必填]网站地址，地址后方不带 /       | <https://chenpeiming52001.github.io> |
 | SMTP_SERVICE  | [必填]邮件服务提供商，支持 QQ、163、126 等 |                 QQ                 |
-|   SMTP_USER   |     [必填]SMTP 服务用户名，及邮箱地址      |             123@qq.com             |
+|   SMTP_USER   |     [必填]SMTP 服务用户名，及邮箱地址      |             <123@qq.com>             |
 |   SMTP_PASS   |         [必填]SMTP 密码，及授权码          |                123                 |
 | TEMPLATE_NAME |   邮件模板，默认 default，可以选 rainbow   |              rainbow               |
-|   TO_EMAIL    |              自定义博主收件人              |      chenpeiming52001@163.com      |
+|   TO_EMAIL    |              自定义博主收件人              |      <chenpeiming52001@163.com>      |
 
 ## 设置后台管理
 

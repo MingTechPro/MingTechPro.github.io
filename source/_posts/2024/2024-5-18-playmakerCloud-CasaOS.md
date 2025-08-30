@@ -17,6 +17,7 @@ abbrlink: b065c228
 ## 准备工作
 
 ### 所需材料
+
 - 玩客云设备及电源
 - 金属镊子或金属丝：用于短接刷机触点
 - USB 公对公连接线：连接玩客云和电脑
@@ -24,9 +25,10 @@ abbrlink: b065c228
 - 热风枪或吹风机：拆卸玩客云外壳
 
 ### 下载相关资料
- - ArmBian 系统固件：底层系统
- - USB_Burning_Tool：晶晨烧录工具
- - MobaXterm：连接 ArmBian 系统工具
+
+- ArmBian 系统固件：底层系统
+- USB_Burning_Tool：晶晨烧录工具
+- MobaXterm：连接 ArmBian 系统工具
 
 ## 刷机步骤
 
@@ -40,6 +42,7 @@ abbrlink: b065c228
 ### 刷 ArmBian 底包
 
 将下载好的 ArmBian 系统固件刷入玩客云，为后续刷机做好准备。具体步骤如下：
+
 - 打开已下载安装好的`“USB_Burning_Tool：晶晨烧录工具”`，并导入烧录包
 ![导入烧录包](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182123269.png)
 - 选择烧录配置，然后点击`“开始”`
@@ -60,11 +63,14 @@ abbrlink: b065c228
 ![刷机完成](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182139217.png)
 
 ### 进入路由器后台查看设备IP
+
 - 查找名为`“onecloud”`的设备，并记下其 IP 地址
 ![查找设备Ip](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182140430.png)
 
 ### 刷入 CasaOS
+
 在 ArmBian 底包的基础上刷入 CasaOS 系统。这一过程需要耐心等待，以确保刷机顺利完成。
+
 - 使用 MobaXterm 连接 ArmBian 系统
 ![连接ArmBian系统](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182141970.png)
 ![连接MobaXterm](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182142344.png)
@@ -77,31 +83,40 @@ abbrlink: b065c228
 
 - 检查系统时间及时区
 执行命令：
+
 ```bash
 date -R
 ```
+
 ![系统时间及时区](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182144795.png)
 
 - 如果系统时区不正确，需要修改时区
 执行命令：
+
 ```bash
 cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 ```
+
 建议重新运行命令查看是否成功修改时区
 ![修改时区](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182145663.png)
 
 - 修改软件安装源以提高安装成功率
 执行命令：
+
 ```bash
 nano /etc/apt/sources.list
 ```
+
 ![编辑软件源](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182145386.png)
 进入编辑页面，将原有的软件源用`“#”`注释掉
 比如:
+
 ```bash
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
 ```
+
 在文本下方的空白处添加以下代码：
+
 ```bash
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
 deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
@@ -112,34 +127,42 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main con
 deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
 deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
 ```
+
 ![编辑保存软件源](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182146289.png)
 
 - 更新本地软件包列表并升级已安装的软件包
 执行命令：
+
 ```bash
 apt-get update && apt-get upgrade
 ```
+
 ![更新本地软件包列表](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182147132.png)
 
 - 安装 CasaOS 系统
 执行命令：
+
 ```bash
 wget -qO- https://get.casaos.io | bash
 ```
+
 ![安装CasaOS系统](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182147239.png)
 ![安装CasaOS系统](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182148439.png)
 
 {% note info flat %}
 若无法安装，可先安装 Docker
 执行命令：
+
 ```bash
 aptinstall docker.io
 ```
+
 {% endnote %}
 
 ### 登录 CasaOS 界面
 
 安装 CasaOS 系统成功后，就可以登录到 CasaOS 系统界面，开始体验全新的系统。
+
 - 可以通过设备的 IP 地址访问 CasaOS
 ![登录CasaOS界面](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182150996.png)
 ![登录CasaOS界面](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182150607.png)
@@ -148,10 +171,12 @@ aptinstall docker.io
 ![注册CasaOS帐户](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182151702.png)
 
 - 添加适用于玩客云设备的软件库，链接如下：
+
 ```url
 https://play.cuse.eu.org/Cpe204-Appstore-play-arm.zip
 http://play.cuse.eu.org/Cpe204-Appstore-play-arm.zip
 ```
+
 ![添加软件库](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182152874.png)
 ![添加软件库](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182152060.png)
 ![添加软件库](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202405182152962.png)
@@ -162,9 +187,11 @@ http://play.cuse.eu.org/Cpe204-Appstore-play-arm.zip
 ## CasaOS 系统介绍
 
 ### Docker 功能
+
 CasaOS 系统支持 Docker 功能，这意味着你可以轻松地安装和运行各种应用程序，扩展玩客云的功能。
 
 ### 推荐应用
+
 - Home Assistant：这是一款极为强大的智能家居控制中心，能使你便捷地对家中的各类智能设备进行管理。
 - 青龙：可用于 Python、JavaScript、Shell 以及 Typescript 脚本的任务管理平台。
 - qBittorrent：免费的 BitTorrent 下载工具。
