@@ -50,7 +50,7 @@ favicon: /img/favicon.svg
 
 # Avatar (头像)
 avatar:
-  img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051658049.jpg
+  img: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051658049.jpg
   effect: false # true：头像会一直转圈
 
 # 禁用所有横幅图像
@@ -60,7 +60,7 @@ disable_top_img: false
 index_img:
 
 # 如果页面的横幅没有设置，它将显示顶部的图片
-default_top_img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202505292002686.jpg
+default_top_img: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202505292002686.jpg
 
 # 存档页面的横幅图像
 archive_img:
@@ -93,7 +93,7 @@ cover:
   position: both
   # 当未设置封面时，显示默认封面 (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202505292002686.jpg
+    - https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202505292002686.jpg
 
 # 替换损坏的图像 (替換無法顯示的圖片)
 error_img:
@@ -172,10 +172,10 @@ reward:
   enable: true
   text:
   QR_code:
-    - img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051708051.jpg
+    - img: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051708051.jpg
       link:
       text: 微信赞赏
-    - img: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051710278.jpg
+    - img: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051710278.jpg
       link:
       text: 支付宝
 
@@ -242,7 +242,7 @@ aside:
   card_announcement:
     enable: true
     content:  我回来了！我的键盘居然还没发芽？<br>各位父老乡亲、兄弟姐妹、不小心点进来的路人朋友们：是的，不用揉眼睛了，您没看错，也不是网页出现了时空乱流。这个几乎要被归档到“互联网考古遗址”的博客，它……它竟然更新了！
-    #content: 欢迎来到 MingTechPro 的个人博客 <br> <a href="https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png"><img width="100%" src="https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png"></a>
+    #content: 欢迎来到 MingTechPro 的个人博客 <br> <a href="https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png"><img width="100%" src="https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png"></a>
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0，将显示所有
@@ -465,7 +465,7 @@ valine:
 # https://waline.js.org/
 waline:
   serverURL: https://waline.mingtechpro.top/ # Waline服务器地址url
-  bg: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051711593.png # waline背景
+  bg: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051711593.png # waline背景
   pageview: false
   option:
     emoji:
@@ -910,7 +910,7 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051713935.gif
+  placeholder: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051713935.gif
   blur: false
 
 # PWA
@@ -948,7 +948,7 @@ inject:
     # 微软访问监控
     - <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "m8d4dvwgzi");</script>
     # 提前与第三方域名建立连接
-    - <link rel="preconnect" href="https://jsd.012700.xyz">
+    - <link rel="preconnect" href="https://cdn.jsdelivr.net">
     # waline 评论 Meta 图标
     - <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline-meta.css"/>
     # 博客文章统计图
@@ -978,7 +978,7 @@ CDN:
 
   # 自定义格式
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://jsd.012700.xyz/npm/${name}@${version}/${min_file}
+  custom_format: https://cdn.jsdelivr.net/npm/${name}@${version}/${min_file}
 
   option:
     # abcjs_basic_js:

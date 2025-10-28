@@ -7,7 +7,7 @@ tags:
   - IPV6
 categories:
   - 网络
-cover: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508310206347.png
+cover: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508310206347.png
 description: 运营商光猫普遍采用四合一设备架构（集调制解调器、路由、交换及Wi-Fi功能于一体），存在硬件性能不足和功能受限两大问题。本文详细记录通过桥接模式改造实现网络性能升级的全流程。
 abbrlink: 2455d826
 ---
@@ -78,7 +78,7 @@ abbrlink: 2455d826
 默认密码：26xxxx6$
 ```
 
-![光猫背面标签](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301536870.jpg)
+![光猫背面标签](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301536870.jpg)
 
 ### 登录光猫管理后台
 
@@ -92,10 +92,10 @@ abbrlink: 2455d826
   建议使用普通用户账号登录（若修改过密码，请使用新密码）
   {% endnote %}
 
-  ![普通账号登录界面](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301600224.png)
+  ![普通账号登录界面](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301600224.png)
 
 - 成功登录后，进入光猫管理主页
-   ![光猫管理主页](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301637994.png)
+   ![光猫管理主页](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301637994.png)
 
 ### 开启Telnet功能
 
@@ -110,7 +110,7 @@ abbrlink: 2455d826
   {% endnote %}
 
 - 页面显示“TelnetSet Success!”即表示开启成功
-![成功开启Telnet](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301642596.png)
+![成功开启Telnet](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301642596.png)
 
 ### 在Windows中启用Telnet客户端
 
@@ -121,18 +121,18 @@ abbrlink: 2455d826
    控制面板\所有控制面板项\程序和功能
    ```
 
-  ![程序和功能界面](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301647836.png)
+  ![程序和功能界面](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301647836.png)
 
 - 点击“启用或关闭Windows功能”
-  ![Windows功能窗口](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301650916.png)
+  ![Windows功能窗口](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301650916.png)
 
 - 勾选“Telnet客户端”后确定
-  ![启用Telnet客户端](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301651234.png)
+  ![启用Telnet客户端](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301651234.png)
 
 ### 通过Telnet连接并获取配置文件
 
 - 按`Win + R`打开运行窗口，输入`cmd`启动命令行  
-  ![命令行界面](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301656807.png)
+  ![命令行界面](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301656807.png)
 
 - 执行Telnet连接命令：
 
@@ -140,7 +140,7 @@ abbrlink: 2455d826
    telnet 192.168.1.1
    ```
 
-  ![Telnet连接命令](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301657546.png)
+  ![Telnet连接命令](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301657546.png)
 
 - 输入管理员账号：`CMCCAdmin`
 
@@ -148,7 +148,7 @@ abbrlink: 2455d826
   CMCCAdmin
   ```
 
-  ![输入管理员账号](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301700833.png)
+  ![输入管理员账号](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301700833.png)
 
 - 输入管理员密码：`aDm8H%MdA`
 
@@ -156,7 +156,7 @@ abbrlink: 2455d826
   aDm8H%MdA
   ```
 
-  ![输入管理员密码](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301711829.png)
+  ![输入管理员密码](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301711829.png)
 
 - 登录成功后输入`ls`命令，验证系统权限
 
@@ -164,7 +164,7 @@ abbrlink: 2455d826
   ls
   ```
 
-  ![权限验证](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301712946.png)
+  ![权限验证](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301712946.png)
 
 ### 提取并查看配置文件
 
@@ -174,7 +174,7 @@ abbrlink: 2455d826
    sidbg 1 DB decry /userconfig/cfg/db_user_cfg.xml
    ```
 
-  ![执行解密命令](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301715583.png)
+  ![执行解密命令](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301715583.png)
 
 - 查看解密后的配置文件：
 
@@ -182,7 +182,7 @@ abbrlink: 2455d826
    vi /tmp/debug-decry-cfg
    ```
 
-   ![查看配置文件](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301716632.png)
+   ![查看配置文件](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301716632.png)
 
 - 搜索关键字段：
 
@@ -190,10 +190,10 @@ abbrlink: 2455d826
    /DevAuthInfo
    ```
 
-  ![搜索关键信息](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301716561.png)
+  ![搜索关键信息](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301716561.png)
 
 - 显示超级管理员账号及密码
-  ![超级管理员凭证](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301720728.png)
+  ![超级管理员凭证](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301720728.png)
 
 ## 获取PPPoE拨号账号密码
 
@@ -205,16 +205,16 @@ abbrlink: 2455d826
   超级管理员密码：P*xxxxxx
   {% endnote %}
 
-  ![超级管理员登录](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301723069.png)
+  ![超级管理员登录](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301723069.png)
 
 - 进入“网络设置”界面
-  ![网络设置入口](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301725319.png)
+  ![网络设置入口](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301725319.png)
 
 - 在“连接名称”中选择`INTERNET`连接
-  ![选择INTERNET连接](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301725376.png)
+  ![选择INTERNET连接](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301725376.png)
 
 - 向下浏览页面，可看到拨号账号；密码默认为星号隐藏，需查阅此前获取的配置文件
-![PPPoE账号显示](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301750319.png)
+![PPPoE账号显示](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301750319.png)
 
 ### 在配置文件中定位拨号信息
 
@@ -224,27 +224,27 @@ abbrlink: 2455d826
    /157xxxxxxxx
    ```
 
-  ![搜索账号信息](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301801439.png)
+  ![搜索账号信息](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301801439.png)
 
 - 准确找到`PPPoE账号密码`字段
-  ![PPPoE账号密码明文](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301801036.png)
+  ![PPPoE账号密码明文](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301801036.png)
 
 ## 配置光猫桥接模式
 
 - 在“连接名称”中选择`INTERNET`连接
-  ![选择INTERNET连接](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301725376.png)
+  ![选择INTERNET连接](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301725376.png)
 
 - 将“连接模式”修改为`桥接模式`，保存设置
-  ![修改为桥接模式](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301806834.png)
+  ![修改为桥接模式](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301806834.png)
 
 ## 配置路由器拨号
 
 - 登录路由器管理界面
 - 于网络设置中选择`PPPoE拨号`方式
-  ![PPPoE拨号选项](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301810270.png)
+  ![PPPoE拨号选项](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301810270.png)
 
 - 输入此前获取的宽带账号与密码，完成配置
-  ![填写拨号信息](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508301814066.png)
+  ![填写拨号信息](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508301814066.png)
 
 ## 总结
 
@@ -263,4 +263,4 @@ abbrlink: 2455d826
   
 此次升级不仅提升了当下的网络体验，更是一次一劳永逸的投资，为家庭数字化生活提供了更强大的网络支撑。
 
-![网络结构对比图](https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/post-img_url/202508310206347.png)
+![网络结构对比图](https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/post-img_url/202508310206347.png)

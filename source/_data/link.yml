@@ -12,12 +12,12 @@
   link_list:
     - name: ChenPeiming.github.io
       link: https://github.com/MingTechPro/ChenPeiming52001.github.io/
-      avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405160046279.svg
+      avatar: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405160046279.svg
       descr: Power by Yummy Jekyll & Revised by Chen Peiming.
 
     - name: js-api-script-toolbox
       link: https://github.com/MingTechPro/js-api-script-toolbox
-      avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405142242021.svg
+      avatar: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405142242021.svg
       descr: JavaScript-api-脚本 工具库
 
 - class_name: DOS 私人服务
@@ -25,7 +25,7 @@
   link_list:
     - name: GitHub
       link: https://github.com/
-      avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405060150773.png
+      avatar: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405060150773.png
       descr: 全球最大的代码仓库
 
     - name: Cloudflare
@@ -58,12 +58,12 @@
 
     - name: Waline
       link: https://waline.js.org/
-      avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405160042176.png
+      avatar: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405160042176.png
       descr: 一款从 Valine 衍生的带后端评论系统
 
     - name: ChenPeiming
       link: https://chenpeiming.mingtechpro.top/
-      avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405160046279.svg
+      avatar: https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405160046279.svg
       descr: ChenPeiming个人博客
 
     - name: 小玉石的博客
