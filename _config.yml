@@ -129,7 +129,7 @@ abbrlink:
 # RSS订阅
 feed:
   # 指定生成的 Feed 类型为 rss2
-  type: rss2
+  输入: rss2
   # 指定生成的 Feed 文件的路径和文件名
   path: feed.xml
   # 限制 Feed 中包含的文章数量为 100 篇
