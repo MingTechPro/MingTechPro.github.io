@@ -215,8 +215,8 @@ footer:
   owner:
     enable: true
     since: 2024 # 展示你站点起始时间
-  custom_text: <img src="https://icp.gov.moe/favicon.ico" style="position:relative;top:4px;" width="20px" height="20px"><a href="https://icp.gov.moe/?keyword=20249006" target="_blank">萌ICP备20249006号</a> <br> All articles in this blog are licensed under CC BY-NC-SA 4.0 unless stating additionally. # 是一个给你用来在页脚自定义文本的选项。通常你可以在这里写声明文本等。支持 HTML。
-  copyright: true # 主题和框架的版权
+  custom_text: <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2026022037号</a> <br> <img src="https://icp.gov.moe/favicon.ico" style="position:relative;top:4px;" width="20px" height="20px"><a href="https://icp.gov.moe/?keyword=20249006" target="_blank">萌ICP备20249006号</a> <br> All articles in this blog are licensed under CC BY-NC-SA 4.0 unless stating additionally. # 是一个给你用来在页脚自定义文本的选项。通常你可以在这里写声明文本等。支持 HTML。
+  copyright: false # 主题和框架的版权
 
 # aside (侧边栏)
 # --------------------------------------
@@ -241,7 +241,7 @@ aside:
       link: https://github.com/MingTechPro
   card_announcement:
     enable: true
-    content:  我回来了！我的键盘居然还没发芽？<br>各位父老乡亲、兄弟姐妹、不小心点进来的路人朋友们：是的，不用揉眼睛了，您没看错，也不是网页出现了时空乱流。这个几乎要被归档到“互联网考古遗址”的博客，它……它竟然更新了！
+    content: 我回来了！我的键盘居然还没发芽？<br>各位父老乡亲、兄弟姐妹、不小心点进来的路人朋友们：是的，不用揉眼睛了，您没看错，也不是网页出现了时空乱流。这个几乎要被归档到“互联网考古遗址”的博客，它……它竟然更新了！
     #content: 欢迎来到 MingTechPro 的个人博客 <br> <a href="https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png"><img width="100%" src="https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png"></a>
   card_recent_post:
     enable: true
