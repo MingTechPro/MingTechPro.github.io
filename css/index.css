@@ -5633,7 +5633,7 @@ figure.highlight pre .javascript .function {
   padding-right: 4px;
 }
 #waline-wrap textarea {
-  background: url("https://cdn.jsdelivr.net/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051711593.png") 100% 100% no-repeat;
+  background: url("/img/waline_bg.png") 100% 100% no-repeat;
 }
 #waline-wrap textarea:focus {
   background-image: none;
