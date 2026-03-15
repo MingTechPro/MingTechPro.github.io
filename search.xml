@@ -59,7 +59,7 @@
 <p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356385.png" alt="设置主页标题"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356705.png" alt="设置主页标题"></p>
 <h3 id="设置关于页"><a href="#设置关于页" class="headerlink" title="设置关于页"></a>设置关于页</h3><ul>
 <li>introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。 <code>设置个人介绍</code></li>
-<li>email: <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x63;&#104;&#101;&#x6e;&#112;&#x65;&#105;&#109;&#x69;&#110;&#x67;&#53;&#x32;&#48;&#x30;&#x31;&#x40;&#49;&#x36;&#51;&#46;&#99;&#x6f;&#x6d;">&#x63;&#104;&#101;&#x6e;&#112;&#x65;&#105;&#109;&#x69;&#110;&#x67;&#53;&#x32;&#48;&#x30;&#x31;&#x40;&#49;&#x36;&#51;&#46;&#99;&#x6f;&#x6d;</a> <code>设置自己的邮箱</code></li>
+<li>email: <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#99;&#x68;&#x65;&#x6e;&#x70;&#x65;&#x69;&#109;&#105;&#110;&#x67;&#x35;&#50;&#48;&#48;&#x31;&#x40;&#49;&#54;&#51;&#46;&#x63;&#111;&#x6d;">&#99;&#x68;&#x65;&#x6e;&#x70;&#x65;&#x69;&#109;&#105;&#110;&#x67;&#x35;&#50;&#48;&#48;&#x31;&#x40;&#49;&#54;&#51;&#46;&#x63;&#111;&#x6d;</a> <code>设置自己的邮箱</code></li>
 <li>skill_software_keywords: [Java, Python] <code>软件开发标签</code></li>
 <li>skill_j2ee_keywords: <code>J2EE开发标签</code></li>
 <li>skill_mobile_app_keywords: <code>手机开发标签</code></li>
@@ -880,7 +880,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <tr>
 <td style="text-align:center">SMTP_USER</td>
 <td style="text-align:center">[必填]SMTP 服务用户名，及邮箱地址</td>
-<td style="text-align:center"><a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x31;&#x32;&#x33;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;">&#x31;&#x32;&#x33;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;</a></td>
+<td style="text-align:center"><a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#49;&#50;&#x33;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;">&#49;&#50;&#x33;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;</a></td>
 </tr>
 <tr>
 <td style="text-align:center">SMTP_PASS</td>
@@ -895,7 +895,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <tr>
 <td style="text-align:center">TO_EMAIL</td>
 <td style="text-align:center">自定义博主收件人</td>
-<td style="text-align:center"><a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x63;&#x68;&#101;&#110;&#112;&#x65;&#x69;&#x6d;&#105;&#x6e;&#103;&#53;&#50;&#x30;&#x30;&#x31;&#64;&#x31;&#x36;&#51;&#x2e;&#x63;&#x6f;&#109;">&#x63;&#x68;&#101;&#110;&#112;&#x65;&#x69;&#x6d;&#105;&#x6e;&#103;&#53;&#50;&#x30;&#x30;&#x31;&#64;&#x31;&#x36;&#51;&#x2e;&#x63;&#x6f;&#109;</a></td>
+<td style="text-align:center"><a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#x63;&#x68;&#101;&#110;&#112;&#101;&#105;&#x6d;&#x69;&#x6e;&#x67;&#53;&#50;&#x30;&#48;&#x31;&#x40;&#x31;&#x36;&#x33;&#46;&#x63;&#x6f;&#109;">&#x63;&#x68;&#101;&#110;&#112;&#101;&#105;&#x6d;&#x69;&#x6e;&#x67;&#53;&#50;&#x30;&#48;&#x31;&#x40;&#x31;&#x36;&#x33;&#46;&#x63;&#x6f;&#109;</a></td>
 </tr>
 </tbody>
 </table>
@@ -1097,7 +1097,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <h3 id="登录光猫管理后台"><a href="#登录光猫管理后台" class="headerlink" title="登录光猫管理后台"></a>登录光猫管理后台</h3><ul>
 <li><p>浏览器中输入管理地址：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://192.168.1.1/</span><br></pre></td></tr></table></figure>
-<div class="note orange no-icon simple"><p>建议使用普通用户账号登录（若修改过密码，请使用新密码）</p>
+<div class="note orange no-icon modern"><p>建议使用普通用户账号登录（若修改过密码，请使用新密码）</p>
 </div>
 <p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301600224.png" alt="普通账号登录界面"></p>
 </li>
@@ -1107,7 +1107,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <h3 id="开启Telnet功能"><a href="#开启Telnet功能" class="headerlink" title="开启Telnet功能"></a>开启Telnet功能</h3><ul>
 <li><p>新建浏览器标签页，访问以下Telnet激活链接：</p>
  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://192.168.1.1/usr=CMCCAdmin&amp;psw=aDm8H%MdA&amp;cmd=1&amp;telnet.gch</span><br></pre></td></tr></table></figure>
-<div class="note orange no-icon simple"><p>参数说明：usr = CMCCAdmin（超级管理员账号）；psw = aDm8H%MdA（超级管理员密码）</p>
+<div class="note orange no-icon modern"><p>参数说明：usr = CMCCAdmin（超级管理员账号）；psw = aDm8H%MdA（超级管理员密码）</p>
 </div>
 </li>
 <li><p>页面显示“TelnetSet Success!”即表示开启成功<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301642596.png" alt="成功开启Telnet"></p>
@@ -1162,7 +1162,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 </ul>
 <h2 id="获取PPPoE拨号账号密码"><a href="#获取PPPoE拨号账号密码" class="headerlink" title="获取PPPoE拨号账号密码"></a>获取PPPoE拨号账号密码</h2><h3 id="使用超级管理员登录"><a href="#使用超级管理员登录" class="headerlink" title="使用超级管理员登录"></a>使用超级管理员登录</h3><ul>
 <li><p>使用获取的超级管理员账号及密码登录后台</p>
-<div class="note green no-icon simple"><p>超级管理员账号：CMCCAdmin<br>超级管理员密码：P*xxxxxx</p>
+<div class="note green no-icon modern"><p>超级管理员账号：CMCCAdmin<br>超级管理员密码：P*xxxxxx</p>
 </div>
 <p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301723069.png" alt="超级管理员登录"></p>
 </li>
@@ -1251,11 +1251,11 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 </tbody>
 </table>
 </div>
-<div class="note orange no-icon simple"><p>如果光猫未改桥接模式，会导致 IPV6 地址嵌套过多，无法正常的访问。<br>需要光猫改桥接模式可参考：<a href="/posts/2455d826">家庭网络架构升级指南：光猫桥接模式配置全流程</a></p>
+<div class="note orange no-icon modern"><p>如果光猫未改桥接模式，会导致 IPV6 地址嵌套过多，无法正常的访问。<br>需要光猫改桥接模式可参考：<a href="/posts/2455d826">家庭网络架构升级指南：光猫桥接模式配置全流程</a></p>
 </div>
 <h3 id="检查-IPv6-连通性"><a href="#检查-IPv6-连通性" class="headerlink" title="检查 IPv6 连通性"></a>检查 IPv6 连通性</h3><p>在 CasaOS 终端中执行以下命令检查 IPv6：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 检查本机 IPv6 地址</span></span><br><span class="line">ip -6 addr show | grep <span class="string">&quot;scope global&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试 IPv6 外网连通性</span></span><br><span class="line">ping6 -c 4 2400:3200::1</span><br></pre></td></tr></table></figure>
-<div class="note orange no-icon simple"><p>如果能看到以 <code>240e</code>（中国电信）、<code>2408</code>（中国联通）、<code>2409</code>（中国移动）开头的 IPv6 地址，说明你的网络已支持 IPv6。</p>
+<div class="note orange no-icon modern"><p>如果能看到以 <code>240e</code>（中国电信）、<code>2408</code>（中国联通）、<code>2409</code>（中国移动）开头的 IPv6 地址，说明你的网络已支持 IPv6。</p>
 </div>
 <h2 id="Cloudflare-配置"><a href="#Cloudflare-配置" class="headerlink" title="Cloudflare 配置"></a>Cloudflare 配置</h2><h3 id="获取-API-Token"><a href="#获取-API-Token" class="headerlink" title="获取 API Token"></a>获取 API Token</h3><ul>
 <li><p>登录 <a href="https://dash.cloudflare.com/">Cloudflare 控制台</a>，按以下步骤操作：</p>
@@ -1267,7 +1267,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <li>选择 <code>编辑区域 DNS</code> → <code>使用模板</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/20260227230923509.png" alt="编辑区域DNS模板"></li>
 <li>配置管理权限</li>
 <li><code>区域管理</code> → <code>选择你的域名</code> → <code>继续以显示摘要</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/20260227233751011.png" alt="配置管理权限"></li>
-<li>创建令牌<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/20260227234106771.png" alt="创建 API 令牌"><div class="note orange no-icon simple"><p>务必保存好生成的 <code>Token</code>（只显示一次）</p>
+<li>创建令牌<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/20260227234106771.png" alt="创建 API 令牌"><div class="note orange no-icon modern"><p>务必保存好生成的 <code>Token</code>（只显示一次）</p>
 </div>
 </li>
 </ul>
