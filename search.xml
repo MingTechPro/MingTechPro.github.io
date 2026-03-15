@@ -59,7 +59,7 @@
 <p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356385.png" alt="设置主页标题"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356705.png" alt="设置主页标题"></p>
 <h3 id="设置关于页"><a href="#设置关于页" class="headerlink" title="设置关于页"></a>设置关于页</h3><ul>
 <li>introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。 <code>设置个人介绍</code></li>
-<li>email: <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#99;&#104;&#x65;&#110;&#x70;&#x65;&#105;&#109;&#x69;&#x6e;&#103;&#53;&#x32;&#48;&#x30;&#49;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;">&#99;&#104;&#x65;&#110;&#x70;&#x65;&#105;&#109;&#x69;&#x6e;&#103;&#53;&#x32;&#48;&#x30;&#49;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;</a> <code>设置自己的邮箱</code></li>
+<li>email: <a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#99;&#x68;&#101;&#x6e;&#112;&#101;&#x69;&#x6d;&#x69;&#x6e;&#x67;&#53;&#50;&#x30;&#x30;&#x31;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#111;&#x6d;">&#99;&#x68;&#101;&#x6e;&#112;&#101;&#x69;&#x6d;&#x69;&#x6e;&#x67;&#53;&#50;&#x30;&#x30;&#x31;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#111;&#x6d;</a> <code>设置自己的邮箱</code></li>
 <li>skill_software_keywords: [Java, Python] <code>软件开发标签</code></li>
 <li>skill_j2ee_keywords: <code>J2EE开发标签</code></li>
 <li>skill_mobile_app_keywords: <code>手机开发标签</code></li>
@@ -122,173 +122,6 @@
       <tags>
         <tag>Jekyll</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>家庭网络架构升级指南：光猫桥接模式配置全流程</title>
-    <url>/posts/2455d826/</url>
-    <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>为何推荐将光猫设置为桥接模式，并使用独立路由器进行拨号？</p>
-<p>运营商标配的光猫设备普遍采用“四合一”架构（集成调制解调、路由、交换及无线接入功能），存在以下两大核心问题：</p>
-<ul>
-<li><p><strong>硬件性能瓶颈</strong><br>设备采用的CPU与内存仅能满足基础联网需求，在多设备接入、大流量下载、P2P传输等高负载场景下，容易出现设备过热、网络卡顿甚至连接中断等问题。</p>
-</li>
-<li><p><strong>系统权限限制</strong><br>封闭的系统软件导致用户无法获得完整的网络管理权限，无法使用游戏加速、设备流量优先级设置等高级功能。</p>
-</li>
-</ul>
-<p>通过调整为桥接模式，可实现以下优化效果：</p>
-<h3 id="实现硬件解耦与功能专精"><a href="#实现硬件解耦与功能专精" class="headerlink" title="实现硬件解耦与功能专精"></a>实现硬件解耦与功能专精</h3><p>将光猫恢复为纯粹的光电信号转换设备，由性能更强的独立路由器承担路由转发、无线覆盖等核心任务。这种专业化分工显著提升系统的稳定性与数据处理效率。</p>
-<h3 id="大幅提升内网传输性能"><a href="#大幅提升内网传输性能" class="headerlink" title="大幅提升内网传输性能"></a>大幅提升内网传输性能</h3><p>构建符合IEEE 802.3标准的全千兆局域网，实现设备间高速互访：</p>
-<ul>
-<li>移动设备访问NAS的延迟降至1ms以下</li>
-<li>4K视频投屏传输无卡顿</li>
-<li>局域网游戏对战延迟降低60%以上（实测延迟低于10ms）</li>
-<li>内网文件传输速度突破千兆物理限制（理论最高可达10Gbps）</li>
-</ul>
-<h3 id="增强网络管理能力"><a href="#增强网络管理能力" class="headerlink" title="增强网络管理能力"></a>增强网络管理能力</h3><p>独立路由器提供完整的管理功能，支持：</p>
-<ul>
-<li>基于应用的QoS流量调度（可精确分配带宽）</li>
-<li>企业级VPN连接（支持IPSec/OpenVPN协议）</li>
-<li>刷写第三方固件（如OpenWrt/LEDE系统）</li>
-<li>Mesh组网扩展（支持802.11k/v/r协议）</li>
-<li>DDNS动态域名解析</li>
-<li>自定义DNS服务器</li>
-<li>UPnP/IGMP协议深度优化</li>
-</ul>
-<h3 id="实现IPv6内网穿透"><a href="#实现IPv6内网穿透" class="headerlink" title="实现IPv6内网穿透"></a>实现IPv6内网穿透</h3><p>为满足家庭服务器/NAS的外网访问需求，可通过IPv6协议实现：</p>
-<ul>
-<li>原生内网穿透（无需公网IP地址）</li>
-<li>自动获取全球唯一IPv6地址</li>
-<li>内置防火墙模板（支持端口级访问控制）</li>
-<li>自动生成DDNS解析记录</li>
-</ul>
-<p><strong>核心优势</strong>：充分释放路由器硬件潜能，最大化宽带利用效率。</p>
-<h2 id="获取移动光猫超级管理员账号密码"><a href="#获取移动光猫超级管理员账号密码" class="headerlink" title="获取移动光猫超级管理员账号密码"></a>获取移动光猫超级管理员账号密码</h2><p>因运营商限制，普通用户无法直接获取超级管理员权限，需通过以下步骤操作：</p>
-<h3 id="查看光猫设备信息"><a href="#查看光猫设备信息" class="headerlink" title="查看光猫设备信息"></a>查看光猫设备信息</h3><p>光猫背面标签页含以下关键信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">设备型号：H5-9</span><br><span class="line">生产日期：2024-07-20</span><br><span class="line">管理地址：192.168.1.1</span><br><span class="line">普通账号：user</span><br><span class="line">默认密码：26xxxx6$</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301536870.jpg" alt="光猫背面标签"></p>
-<h3 id="登录光猫管理后台"><a href="#登录光猫管理后台" class="headerlink" title="登录光猫管理后台"></a>登录光猫管理后台</h3><ul>
-<li><p>浏览器中输入管理地址：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://192.168.1.1/</span><br></pre></td></tr></table></figure>
-<div class="note orange no-icon simple"><p>建议使用普通用户账号登录（若修改过密码，请使用新密码）</p>
-</div>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301600224.png" alt="普通账号登录界面"></p>
-</li>
-<li><p>成功登录后，进入光猫管理主页<br> <img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301637994.png" alt="光猫管理主页"></p>
-</li>
-</ul>
-<h3 id="开启Telnet功能"><a href="#开启Telnet功能" class="headerlink" title="开启Telnet功能"></a>开启Telnet功能</h3><ul>
-<li><p>新建浏览器标签页，访问以下Telnet激活链接：</p>
- <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://192.168.1.1/usr=CMCCAdmin&amp;psw=aDm8H%MdA&amp;cmd=1&amp;telnet.gch</span><br></pre></td></tr></table></figure>
-<div class="note orange no-icon simple"><p>参数说明：usr = CMCCAdmin（超级管理员账号）；psw = aDm8H%MdA（超级管理员密码）</p>
-</div>
-</li>
-<li><p>页面显示“TelnetSet Success!”即表示开启成功<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301642596.png" alt="成功开启Telnet"></p>
-</li>
-</ul>
-<h3 id="在Windows中启用Telnet客户端"><a href="#在Windows中启用Telnet客户端" class="headerlink" title="在Windows中启用Telnet客户端"></a>在Windows中启用Telnet客户端</h3><ul>
-<li>按<code>Win + E</code>打开文件资源管理器  </li>
-<li><p>进入以下路径</p>
- <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">控制面板\所有控制面板项\程序和功能</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301647836.png" alt="程序和功能界面"></p>
-</li>
-<li><p>点击“启用或关闭Windows功能”<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301650916.png" alt="Windows功能窗口"></p>
-</li>
-<li><p>勾选“Telnet客户端”后确定<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301651234.png" alt="启用Telnet客户端"></p>
-</li>
-</ul>
-<h3 id="通过Telnet连接并获取配置文件"><a href="#通过Telnet连接并获取配置文件" class="headerlink" title="通过Telnet连接并获取配置文件"></a>通过Telnet连接并获取配置文件</h3><ul>
-<li><p>按<code>Win + R</code>打开运行窗口，输入<code>cmd</code>启动命令行<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301656807.png" alt="命令行界面"></p>
-</li>
-<li><p>执行Telnet连接命令：</p>
- <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">telnet <span class="number">192</span>.<span class="number">168</span>.<span class="number">1</span>.<span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301657546.png" alt="Telnet连接命令"></p>
-</li>
-<li><p>输入管理员账号：<code>CMCCAdmin</code></p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">CMCCAdmin</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301700833.png" alt="输入管理员账号"></p>
-</li>
-<li><p>输入管理员密码：<code>aDm8H%MdA</code></p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">aDm8H%MdA</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301711829.png" alt="输入管理员密码"></p>
-</li>
-<li><p>登录成功后输入<code>ls</code>命令，验证系统权限</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301712946.png" alt="权限验证"></p>
-</li>
-</ul>
-<h3 id="提取并查看配置文件"><a href="#提取并查看配置文件" class="headerlink" title="提取并查看配置文件"></a>提取并查看配置文件</h3><ul>
-<li><p>执行配置解密命令：</p>
- <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">sidbg <span class="number">1</span> DB decry /userconfig/cfg/db_user_cfg.xml</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301715583.png" alt="执行解密命令"></p>
-</li>
-<li><p>查看解密后的配置文件：</p>
- <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">vi /tmp/debug-decry-cfg</span><br></pre></td></tr></table></figure>
-<p> <img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301716632.png" alt="查看配置文件"></p>
-</li>
-<li><p>搜索关键字段：</p>
- <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">/DevAuthInfo</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301716561.png" alt="搜索关键信息"></p>
-</li>
-<li><p>显示超级管理员账号及密码<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301720728.png" alt="超级管理员凭证"></p>
-</li>
-</ul>
-<h2 id="获取PPPoE拨号账号密码"><a href="#获取PPPoE拨号账号密码" class="headerlink" title="获取PPPoE拨号账号密码"></a>获取PPPoE拨号账号密码</h2><h3 id="使用超级管理员登录"><a href="#使用超级管理员登录" class="headerlink" title="使用超级管理员登录"></a>使用超级管理员登录</h3><ul>
-<li><p>使用获取的超级管理员账号及密码登录后台</p>
-<div class="note green no-icon simple"><p>超级管理员账号：CMCCAdmin<br>超级管理员密码：P*xxxxxx</p>
-</div>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301723069.png" alt="超级管理员登录"></p>
-</li>
-<li><p>进入“网络设置”界面<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301725319.png" alt="网络设置入口"></p>
-</li>
-<li><p>在“连接名称”中选择<code>INTERNET</code>连接<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301725376.png" alt="选择INTERNET连接"></p>
-</li>
-<li><p>向下浏览页面，可看到拨号账号；密码默认为星号隐藏，需查阅此前获取的配置文件<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301750319.png" alt="PPPoE账号显示"></p>
-</li>
-</ul>
-<h3 id="在配置文件中定位拨号信息"><a href="#在配置文件中定位拨号信息" class="headerlink" title="在配置文件中定位拨号信息"></a>在配置文件中定位拨号信息</h3><ul>
-<li><p>于配置文件中执行搜索：</p>
- <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">/<span class="number">157</span>xxxxxxxx</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301801439.png" alt="搜索账号信息"></p>
-</li>
-<li><p>准确找到<code>PPPoE账号密码</code>字段<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301801036.png" alt="PPPoE账号密码明文"></p>
-</li>
-</ul>
-<h2 id="配置光猫桥接模式"><a href="#配置光猫桥接模式" class="headerlink" title="配置光猫桥接模式"></a>配置光猫桥接模式</h2><ul>
-<li><p>在“连接名称”中选择<code>INTERNET</code>连接<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301725376.png" alt="选择INTERNET连接"></p>
-</li>
-<li><p>将“连接模式”修改为<code>桥接模式</code>，保存设置<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301806834.png" alt="修改为桥接模式"></p>
-</li>
-</ul>
-<h2 id="配置路由器拨号"><a href="#配置路由器拨号" class="headerlink" title="配置路由器拨号"></a>配置路由器拨号</h2><ul>
-<li>登录路由器管理界面</li>
-<li><p>于网络设置中选择<code>PPPoE拨号</code>方式<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301810270.png" alt="PPPoE拨号选项"></p>
-</li>
-<li><p>输入此前获取的宽带账号与密码，完成配置<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301814066.png" alt="填写拨号信息"></p>
-</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过以上步骤，我们成功完成了从运营商光猫到独立路由器的网络架构升级。回顾整个流程：</p>
-<ol>
-<li><strong>获取权限</strong>：通过开启Telnet功能并解密配置文件，成功获取了光猫的超级管理员权限，这是后续所有操作的基础。</li>
-<li><strong>提取信息</strong>：利用超级管理员权限，从光猫后台和配置文件中找到了至关重要的PPPoE拨号账号和密码。</li>
-<li><strong>模式切换</strong>：将光猫的工作模式从路由模式改为桥接模式，使其回归本职的光电转换功能。</li>
-<li><strong>功能移交</strong>：在性能更强的独立路由器上完成拨号认证，由路由器承担起网络管理和数据转发的核心任务。</li>
-</ol>
-<p><strong>最终成果</strong>：</p>
-<ul>
-<li><strong>性能提升</strong>：成功解决了原光猫硬件性能瓶颈带来的网络卡顿、延迟高等问题。</li>
-<li><strong>功能释放</strong>：获得了完整的网络管理权限，可以充分利用路由器的高级功能，如QoS、VPN、IPv6内网穿透等。</li>
-<li><strong>架构优化</strong>：建立了更加专业、稳定和可控的家庭网络架构，为未来的网络应用（如NAS、智能家居、影音娱乐）打下了坚实基础。</li>
-</ul>
-<p>此次升级不仅提升了当下的网络体验，更是一次一劳永逸的投资，为家庭数字化生活提供了更强大的网络支撑。</p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508310206347.png" alt="网络结构对比图"></p>
-]]></content>
-      <categories>
-        <category>网络</category>
-      </categories>
-      <tags>
-        <tag>移动光猫</tag>
-        <tag>路由器</tag>
-        <tag>IPV6</tag>
       </tags>
   </entry>
   <entry>
@@ -1047,7 +880,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <tr>
 <td style="text-align:center">SMTP_USER</td>
 <td style="text-align:center">[必填]SMTP 服务用户名，及邮箱地址</td>
-<td style="text-align:center"><a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x31;&#50;&#x33;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#x31;&#50;&#x33;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a></td>
+<td style="text-align:center"><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#x31;&#50;&#x33;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;">&#x31;&#50;&#x33;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;</a></td>
 </tr>
 <tr>
 <td style="text-align:center">SMTP_PASS</td>
@@ -1062,7 +895,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <tr>
 <td style="text-align:center">TO_EMAIL</td>
 <td style="text-align:center">自定义博主收件人</td>
-<td style="text-align:center"><a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x63;&#104;&#x65;&#110;&#112;&#x65;&#x69;&#x6d;&#x69;&#x6e;&#x67;&#53;&#50;&#48;&#48;&#49;&#64;&#x31;&#x36;&#51;&#46;&#x63;&#111;&#109;">&#x63;&#104;&#x65;&#110;&#112;&#x65;&#x69;&#x6d;&#x69;&#x6e;&#x67;&#53;&#50;&#48;&#48;&#49;&#64;&#x31;&#x36;&#51;&#46;&#x63;&#111;&#109;</a></td>
+<td style="text-align:center"><a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x63;&#x68;&#x65;&#x6e;&#x70;&#101;&#x69;&#x6d;&#105;&#110;&#103;&#x35;&#x32;&#48;&#48;&#49;&#64;&#49;&#54;&#51;&#x2e;&#99;&#111;&#x6d;">&#x63;&#x68;&#x65;&#x6e;&#x70;&#101;&#x69;&#x6d;&#105;&#110;&#103;&#x35;&#x32;&#48;&#48;&#49;&#64;&#49;&#54;&#51;&#x2e;&#99;&#111;&#x6d;</a></td>
 </tr>
 </tbody>
 </table>
@@ -1112,111 +945,170 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       </tags>
   </entry>
   <entry>
-    <title>玩客云的新生：CasaOS 系统刷机全记录</title>
-    <url>/posts/b065c228/</url>
-    <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>玩客云，一款硬件性能出色的智能存储设备。轻 NAC 系统（CasaOS）以其简洁高效的优势，深受众多用户喜爱。将玩客云刷入 CasaOS 系统，能充分挖掘其潜力，带来全新功能和体验。下面，我将为大家详细介绍玩客云刷入 CasaOS 的具体步骤，并分享其优势，希望能激发大家对刷机过程的兴趣。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="所需材料"><a href="#所需材料" class="headerlink" title="所需材料"></a>所需材料</h3><ul>
-<li>玩客云设备及电源</li>
-<li>金属镊子或金属丝：用于短接刷机触点</li>
-<li>USB 公对公连接线：连接玩客云和电脑</li>
-<li>电脑：安装刷机工具和系统</li>
-<li>热风枪或吹风机：拆卸玩客云外壳</li>
-</ul>
-<h3 id="下载相关资料"><a href="#下载相关资料" class="headerlink" title="下载相关资料"></a>下载相关资料</h3><ul>
-<li>ArmBian 系统固件：底层系统</li>
-<li>USB_Burning_Tool：晶晨烧录工具</li>
-<li>MobaXterm：连接 ArmBian 系统工具</li>
-</ul>
-<h2 id="刷机步骤"><a href="#刷机步骤" class="headerlink" title="刷机步骤"></a>刷机步骤</h2><h3 id="拆开玩客云主机"><a href="#拆开玩客云主机" class="headerlink" title="拆开玩客云主机"></a>拆开玩客云主机</h3><p>使用热风枪或吹风机加热玩客云外壳后盖版并撬开外面装饰盖板<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182121905.jpg" alt="加热后盖板"><br>然后打下螺丝小心地将其后盖拆开取出主板，注意不要损坏内部元件！<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182122268.jpg" alt="取下螺丝"></p>
-<h3 id="刷-ArmBian-底包"><a href="#刷-ArmBian-底包" class="headerlink" title="刷 ArmBian 底包"></a>刷 ArmBian 底包</h3><p>将下载好的 ArmBian 系统固件刷入玩客云，为后续刷机做好准备。具体步骤如下：</p>
+    <title>家庭网络架构升级指南：光猫桥接模式配置全流程</title>
+    <url>/posts/2455d826/</url>
+    <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>为何推荐将光猫设置为桥接模式，并使用独立路由器进行拨号？</p>
+<p>运营商标配的光猫设备普遍采用“四合一”架构（集成调制解调、路由、交换及无线接入功能），存在以下两大核心问题：</p>
 <ul>
-<li>打开已下载安装好的<code>“USB_Burning_Tool：晶晨烧录工具”</code>，并导入烧录包<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182123269.png" alt="导入烧录包"></li>
-<li>选择烧录配置，然后点击<code>“开始”</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182124771.png" alt="烧录配置"></li>
-<li>使用 USB 公对公线将主板和电脑连接起来<br>(USB 接口应选择靠近 HDMI 接口的那一边)<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182126519.jpg" alt="接入USB接口"></li>
-<li><p>短接刷机触点，并给设备接通电源<br>(此时电脑会自动连接主板，进入刷机模式)</p>
-<div class="note danger modern"><p>注：不同玩客云型号所对应的短接刷机触点是有所不同的，请参考以下图片进行短接操作。</p>
+<li><p><strong>硬件性能瓶颈</strong><br>设备采用的CPU与内存仅能满足基础联网需求，在多设备接入、大流量下载、P2P传输等高负载场景下，容易出现设备过热、网络卡顿甚至连接中断等问题。</p>
+</li>
+<li><p><strong>系统权限限制</strong><br>封闭的系统软件导致用户无法获得完整的网络管理权限，无法使用游戏加速、设备流量优先级设置等高级功能。</p>
+</li>
+</ul>
+<p>通过调整为桥接模式，可实现以下优化效果：</p>
+<h3 id="实现硬件解耦与功能专精"><a href="#实现硬件解耦与功能专精" class="headerlink" title="实现硬件解耦与功能专精"></a>实现硬件解耦与功能专精</h3><p>将光猫恢复为纯粹的光电信号转换设备，由性能更强的独立路由器承担路由转发、无线覆盖等核心任务。这种专业化分工显著提升系统的稳定性与数据处理效率。</p>
+<h3 id="大幅提升内网传输性能"><a href="#大幅提升内网传输性能" class="headerlink" title="大幅提升内网传输性能"></a>大幅提升内网传输性能</h3><p>构建符合IEEE 802.3标准的全千兆局域网，实现设备间高速互访：</p>
+<ul>
+<li>移动设备访问NAS的延迟降至1ms以下</li>
+<li>4K视频投屏传输无卡顿</li>
+<li>局域网游戏对战延迟降低60%以上（实测延迟低于10ms）</li>
+<li>内网文件传输速度突破千兆物理限制（理论最高可达10Gbps）</li>
+</ul>
+<h3 id="增强网络管理能力"><a href="#增强网络管理能力" class="headerlink" title="增强网络管理能力"></a>增强网络管理能力</h3><p>独立路由器提供完整的管理功能，支持：</p>
+<ul>
+<li>基于应用的QoS流量调度（可精确分配带宽）</li>
+<li>企业级VPN连接（支持IPSec/OpenVPN协议）</li>
+<li>刷写第三方固件（如OpenWrt/LEDE系统）</li>
+<li>Mesh组网扩展（支持802.11k/v/r协议）</li>
+<li>DDNS动态域名解析</li>
+<li>自定义DNS服务器</li>
+<li>UPnP/IGMP协议深度优化</li>
+</ul>
+<h3 id="实现IPv6内网穿透"><a href="#实现IPv6内网穿透" class="headerlink" title="实现IPv6内网穿透"></a>实现IPv6内网穿透</h3><p>为满足家庭服务器/NAS的外网访问需求，可通过IPv6协议实现：</p>
+<ul>
+<li>原生内网穿透（无需公网IP地址）</li>
+<li>自动获取全球唯一IPv6地址</li>
+<li>内置防火墙模板（支持端口级访问控制）</li>
+<li>自动生成DDNS解析记录</li>
+</ul>
+<p><strong>核心优势</strong>：充分释放路由器硬件潜能，最大化宽带利用效率。</p>
+<h2 id="获取移动光猫超级管理员账号密码"><a href="#获取移动光猫超级管理员账号密码" class="headerlink" title="获取移动光猫超级管理员账号密码"></a>获取移动光猫超级管理员账号密码</h2><p>因运营商限制，普通用户无法直接获取超级管理员权限，需通过以下步骤操作：</p>
+<h3 id="查看光猫设备信息"><a href="#查看光猫设备信息" class="headerlink" title="查看光猫设备信息"></a>查看光猫设备信息</h3><p>光猫背面标签页含以下关键信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">设备型号：H5-9</span><br><span class="line">生产日期：2024-07-20</span><br><span class="line">管理地址：192.168.1.1</span><br><span class="line">普通账号：user</span><br><span class="line">默认密码：26xxxx6$</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301536870.jpg" alt="光猫背面标签"></p>
+<h3 id="登录光猫管理后台"><a href="#登录光猫管理后台" class="headerlink" title="登录光猫管理后台"></a>登录光猫管理后台</h3><ul>
+<li><p>浏览器中输入管理地址：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://192.168.1.1/</span><br></pre></td></tr></table></figure>
+<div class="note orange no-icon simple"><p>建议使用普通用户账号登录（若修改过密码，请使用新密码）</p>
 </div>
-<p><code>1.0</code>版本主板短接触点<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182133751.png" alt="1.0版本主板"><br><code>1.3</code>版本主板短接触点<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182134262.png" alt="1.3版本主板"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182138509.png" alt="进入刷机模式"></p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301600224.png" alt="普通账号登录界面"></p>
 </li>
-<li><p>等待刷机完成，注意先点击刷机软件中的<code>“停止”</code>，再移除 USB 连接线，然后重启设备<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182139217.png" alt="刷机完成"></p>
-</li>
-</ul>
-<h3 id="进入路由器后台查看设备IP"><a href="#进入路由器后台查看设备IP" class="headerlink" title="进入路由器后台查看设备IP"></a>进入路由器后台查看设备IP</h3><ul>
-<li>查找名为<code>“onecloud”</code>的设备，并记下其 IP 地址<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182140430.png" alt="查找设备Ip"></li>
-</ul>
-<h3 id="刷入-CasaOS"><a href="#刷入-CasaOS" class="headerlink" title="刷入 CasaOS"></a>刷入 CasaOS</h3><p>在 ArmBian 底包的基础上刷入 CasaOS 系统。这一过程需要耐心等待，以确保刷机顺利完成。</p>
-<ul>
-<li><p>使用 MobaXterm 连接 ArmBian 系统<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182141970.png" alt="连接ArmBian系统"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182142344.png" alt="连接MobaXterm"></p>
-</li>
-<li><p>登录 ArmBian 系统 - 账号：root 默认密码：1234<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182143434.png" alt="登录ArmBian系统"></p>
-</li>
-<li><p>修改登录密码并取消设置新账户<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182143317.png" alt="修改密码"></p>
-</li>
-<li><p>检查系统时间及时区<br>执行命令：</p>
+<li><p>成功登录后，进入光猫管理主页<br> <img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301637994.png" alt="光猫管理主页"></p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">date</span> -R</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182144795.png" alt="系统时间及时区"></p>
-<ul>
-<li>如果系统时区不正确，需要修改时区<br>执行命令：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime</span><br></pre></td></tr></table></figure>
-<p>建议重新运行命令查看是否成功修改时区<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182145663.png" alt="修改时区"></p>
-<ul>
-<li>修改软件安装源以提高安装成功率<br>执行命令：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nano /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182145386.png" alt="编辑软件源"><br>进入编辑页面，将原有的软件源用<code>“#”</code>注释掉<br>比如:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free</span></span><br></pre></td></tr></table></figure>
-<p>在文本下方的空白处添加以下代码：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182146289.png" alt="编辑保存软件源"></p>
-<ul>
-<li>更新本地软件包列表并升级已安装的软件包<br>执行命令：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update &amp;&amp; apt-get upgrade</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182147132.png" alt="更新本地软件包列表"></p>
-<ul>
-<li>安装 CasaOS 系统<br>执行命令：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://get.casaos.io | bash</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182147239.png" alt="安装CasaOS系统"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182148439.png" alt="安装CasaOS系统"></p>
-<div class="note info flat"><p>若无法安装，可先安装 Docker<br>执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">aptinstall docker.io</span><br></pre></td></tr></table></figure>
+<h3 id="开启Telnet功能"><a href="#开启Telnet功能" class="headerlink" title="开启Telnet功能"></a>开启Telnet功能</h3><ul>
+<li><p>新建浏览器标签页，访问以下Telnet激活链接：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://192.168.1.1/usr=CMCCAdmin&amp;psw=aDm8H%MdA&amp;cmd=1&amp;telnet.gch</span><br></pre></td></tr></table></figure>
+<div class="note orange no-icon simple"><p>参数说明：usr = CMCCAdmin（超级管理员账号）；psw = aDm8H%MdA（超级管理员密码）</p>
 </div>
-<h3 id="登录-CasaOS-界面"><a href="#登录-CasaOS-界面" class="headerlink" title="登录 CasaOS 界面"></a>登录 CasaOS 界面</h3><p>安装 CasaOS 系统成功后，就可以登录到 CasaOS 系统界面，开始体验全新的系统。</p>
+</li>
+<li><p>页面显示“TelnetSet Success!”即表示开启成功<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301642596.png" alt="成功开启Telnet"></p>
+</li>
+</ul>
+<h3 id="在Windows中启用Telnet客户端"><a href="#在Windows中启用Telnet客户端" class="headerlink" title="在Windows中启用Telnet客户端"></a>在Windows中启用Telnet客户端</h3><ul>
+<li>按<code>Win + E</code>打开文件资源管理器  </li>
+<li><p>进入以下路径</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">控制面板\所有控制面板项\程序和功能</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301647836.png" alt="程序和功能界面"></p>
+</li>
+<li><p>点击“启用或关闭Windows功能”<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301650916.png" alt="Windows功能窗口"></p>
+</li>
+<li><p>勾选“Telnet客户端”后确定<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301651234.png" alt="启用Telnet客户端"></p>
+</li>
+</ul>
+<h3 id="通过Telnet连接并获取配置文件"><a href="#通过Telnet连接并获取配置文件" class="headerlink" title="通过Telnet连接并获取配置文件"></a>通过Telnet连接并获取配置文件</h3><ul>
+<li><p>按<code>Win + R</code>打开运行窗口，输入<code>cmd</code>启动命令行<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301656807.png" alt="命令行界面"></p>
+</li>
+<li><p>执行Telnet连接命令：</p>
+ <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">telnet <span class="number">192</span>.<span class="number">168</span>.<span class="number">1</span>.<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301657546.png" alt="Telnet连接命令"></p>
+</li>
+<li><p>输入管理员账号：<code>CMCCAdmin</code></p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">CMCCAdmin</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301700833.png" alt="输入管理员账号"></p>
+</li>
+<li><p>输入管理员密码：<code>aDm8H%MdA</code></p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">aDm8H%MdA</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301711829.png" alt="输入管理员密码"></p>
+</li>
+<li><p>登录成功后输入<code>ls</code>命令，验证系统权限</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301712946.png" alt="权限验证"></p>
+</li>
+</ul>
+<h3 id="提取并查看配置文件"><a href="#提取并查看配置文件" class="headerlink" title="提取并查看配置文件"></a>提取并查看配置文件</h3><ul>
+<li><p>执行配置解密命令：</p>
+ <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">sidbg <span class="number">1</span> DB decry /userconfig/cfg/db_user_cfg.xml</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301715583.png" alt="执行解密命令"></p>
+</li>
+<li><p>查看解密后的配置文件：</p>
+ <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">vi /tmp/debug-decry-cfg</span><br></pre></td></tr></table></figure>
+<p> <img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301716632.png" alt="查看配置文件"></p>
+</li>
+<li><p>搜索关键字段：</p>
+ <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">/DevAuthInfo</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301716561.png" alt="搜索关键信息"></p>
+</li>
+<li><p>显示超级管理员账号及密码<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301720728.png" alt="超级管理员凭证"></p>
+</li>
+</ul>
+<h2 id="获取PPPoE拨号账号密码"><a href="#获取PPPoE拨号账号密码" class="headerlink" title="获取PPPoE拨号账号密码"></a>获取PPPoE拨号账号密码</h2><h3 id="使用超级管理员登录"><a href="#使用超级管理员登录" class="headerlink" title="使用超级管理员登录"></a>使用超级管理员登录</h3><ul>
+<li><p>使用获取的超级管理员账号及密码登录后台</p>
+<div class="note green no-icon simple"><p>超级管理员账号：CMCCAdmin<br>超级管理员密码：P*xxxxxx</p>
+</div>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301723069.png" alt="超级管理员登录"></p>
+</li>
+<li><p>进入“网络设置”界面<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301725319.png" alt="网络设置入口"></p>
+</li>
+<li><p>在“连接名称”中选择<code>INTERNET</code>连接<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301725376.png" alt="选择INTERNET连接"></p>
+</li>
+<li><p>向下浏览页面，可看到拨号账号；密码默认为星号隐藏，需查阅此前获取的配置文件<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301750319.png" alt="PPPoE账号显示"></p>
+</li>
+</ul>
+<h3 id="在配置文件中定位拨号信息"><a href="#在配置文件中定位拨号信息" class="headerlink" title="在配置文件中定位拨号信息"></a>在配置文件中定位拨号信息</h3><ul>
+<li><p>于配置文件中执行搜索：</p>
+ <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">/<span class="number">157</span>xxxxxxxx</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301801439.png" alt="搜索账号信息"></p>
+</li>
+<li><p>准确找到<code>PPPoE账号密码</code>字段<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301801036.png" alt="PPPoE账号密码明文"></p>
+</li>
+</ul>
+<h2 id="配置光猫桥接模式"><a href="#配置光猫桥接模式" class="headerlink" title="配置光猫桥接模式"></a>配置光猫桥接模式</h2><ul>
+<li><p>在“连接名称”中选择<code>INTERNET</code>连接<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301725376.png" alt="选择INTERNET连接"></p>
+</li>
+<li><p>将“连接模式”修改为<code>桥接模式</code>，保存设置<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301806834.png" alt="修改为桥接模式"></p>
+</li>
+</ul>
+<h2 id="配置路由器拨号"><a href="#配置路由器拨号" class="headerlink" title="配置路由器拨号"></a>配置路由器拨号</h2><ul>
+<li>登录路由器管理界面</li>
+<li><p>于网络设置中选择<code>PPPoE拨号</code>方式<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301810270.png" alt="PPPoE拨号选项"></p>
+</li>
+<li><p>输入此前获取的宽带账号与密码，完成配置<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508301814066.png" alt="填写拨号信息"></p>
+</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过以上步骤，我们成功完成了从运营商光猫到独立路由器的网络架构升级。回顾整个流程：</p>
+<ol>
+<li><strong>获取权限</strong>：通过开启Telnet功能并解密配置文件，成功获取了光猫的超级管理员权限，这是后续所有操作的基础。</li>
+<li><strong>提取信息</strong>：利用超级管理员权限，从光猫后台和配置文件中找到了至关重要的PPPoE拨号账号和密码。</li>
+<li><strong>模式切换</strong>：将光猫的工作模式从路由模式改为桥接模式，使其回归本职的光电转换功能。</li>
+<li><strong>功能移交</strong>：在性能更强的独立路由器上完成拨号认证，由路由器承担起网络管理和数据转发的核心任务。</li>
+</ol>
+<p><strong>最终成果</strong>：</p>
 <ul>
-<li><p>可以通过设备的 IP 地址访问 CasaOS<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182150996.png" alt="登录CasaOS界面"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182150607.png" alt="登录CasaOS界面"></p>
-</li>
-<li><p>注册 CasaOS 帐户<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182151702.png" alt="注册CasaOS帐户"></p>
-</li>
-<li><p>添加适用于玩客云设备的软件库，链接如下：</p>
-</li>
+<li><strong>性能提升</strong>：成功解决了原光猫硬件性能瓶颈带来的网络卡顿、延迟高等问题。</li>
+<li><strong>功能释放</strong>：获得了完整的网络管理权限，可以充分利用路由器的高级功能，如QoS、VPN、IPv6内网穿透等。</li>
+<li><strong>架构优化</strong>：建立了更加专业、稳定和可控的家庭网络架构，为未来的网络应用（如NAS、智能家居、影音娱乐）打下了坚实基础。</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://play.cuse.eu.org/Cpe204-Appstore-play-arm.zip</span><br><span class="line">http://play.cuse.eu.org/Cpe204-Appstore-play-arm.zip</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182152874.png" alt="添加软件库"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182152060.png" alt="添加软件库"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182152962.png" alt="添加软件库"><br><div class="note warning flat"><p>注：只需填入其中一个链接即可，如果使用 https 协议添加不成功，则可以使用 http 协议。</p>
-</div></p>
-<h2 id="CasaOS-系统介绍"><a href="#CasaOS-系统介绍" class="headerlink" title="CasaOS 系统介绍"></a>CasaOS 系统介绍</h2><h3 id="Docker-功能"><a href="#Docker-功能" class="headerlink" title="Docker 功能"></a>Docker 功能</h3><p>CasaOS 系统支持 Docker 功能，这意味着你可以轻松地安装和运行各种应用程序，扩展玩客云的功能。</p>
-<h3 id="推荐应用"><a href="#推荐应用" class="headerlink" title="推荐应用"></a>推荐应用</h3><ul>
-<li>Home Assistant：这是一款极为强大的智能家居控制中心，能使你便捷地对家中的各类智能设备进行管理。</li>
-<li>青龙：可用于 Python、JavaScript、Shell 以及 Typescript 脚本的任务管理平台。</li>
-<li>qBittorrent：免费的 BitTorrent 下载工具。</li>
-<li>Alist：一个能够支持多种存储的文件列表程序。</li>
-<li>Pi-hole：强大的网络广告拦截利器。</li>
-<li>Memos：简单且易用的笔记应用，便于你记录重要的信息和创意想法。</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>玩客云刷入轻 NAC 系统（CasaOS）是一次充满挑战和乐趣的经历。通过刷机，我们不仅释放了玩客云的潜力，还获得了一个功能强大、易于使用的系统。CasaOS 系统的 Docker 功能和丰富的应用支持让玩客云变得更加实用和有趣。结合 cpolar 内网穿透实现的远程访问功能，让我们可以随时随地访问和管理玩客云。</p>
-<p>如果你对玩客云刷入轻 NAC 系统（CasaOS）感兴趣，不妨动手尝试一下。相信这一过程会让你对玩客云有全新的认识，并为你的数字生活带来更多的便利和乐趣。</p>
-<p>需要注意的是，刷机有一定风险，请谨慎操作，并确保你已经备份了重要的数据。同时，本文提供的信息仅供参考，具体的刷机过程可能因设备和系统版本的不同而有所差异。祝你刷机顺利！</p>
-<hr>
-<p>请关注公众号，并回复<code>“玩客云”</code>以获取相关资源。<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png" alt="微信公众号"></p>
+<p>此次升级不仅提升了当下的网络体验，更是一次一劳永逸的投资，为家庭数字化生活提供了更强大的网络支撑。</p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202508310206347.png" alt="网络结构对比图"></p>
 ]]></content>
       <categories>
-        <category>玩客云</category>
+        <category>网络</category>
       </categories>
       <tags>
-        <tag>CasaOS</tag>
-        <tag>玩客云</tag>
+        <tag>移动光猫</tag>
+        <tag>路由器</tag>
+        <tag>IPV6</tag>
       </tags>
   </entry>
   <entry>
@@ -1355,6 +1247,114 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       <tags>
         <tag>IPV6</tag>
         <tag>CasaOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>玩客云的新生：CasaOS 系统刷机全记录</title>
+    <url>/posts/b065c228/</url>
+    <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>玩客云，一款硬件性能出色的智能存储设备。轻 NAC 系统（CasaOS）以其简洁高效的优势，深受众多用户喜爱。将玩客云刷入 CasaOS 系统，能充分挖掘其潜力，带来全新功能和体验。下面，我将为大家详细介绍玩客云刷入 CasaOS 的具体步骤，并分享其优势，希望能激发大家对刷机过程的兴趣。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="所需材料"><a href="#所需材料" class="headerlink" title="所需材料"></a>所需材料</h3><ul>
+<li>玩客云设备及电源</li>
+<li>金属镊子或金属丝：用于短接刷机触点</li>
+<li>USB 公对公连接线：连接玩客云和电脑</li>
+<li>电脑：安装刷机工具和系统</li>
+<li>热风枪或吹风机：拆卸玩客云外壳</li>
+</ul>
+<h3 id="下载相关资料"><a href="#下载相关资料" class="headerlink" title="下载相关资料"></a>下载相关资料</h3><ul>
+<li>ArmBian 系统固件：底层系统</li>
+<li>USB_Burning_Tool：晶晨烧录工具</li>
+<li>MobaXterm：连接 ArmBian 系统工具</li>
+</ul>
+<h2 id="刷机步骤"><a href="#刷机步骤" class="headerlink" title="刷机步骤"></a>刷机步骤</h2><h3 id="拆开玩客云主机"><a href="#拆开玩客云主机" class="headerlink" title="拆开玩客云主机"></a>拆开玩客云主机</h3><p>使用热风枪或吹风机加热玩客云外壳后盖版并撬开外面装饰盖板<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182121905.jpg" alt="加热后盖板"><br>然后打下螺丝小心地将其后盖拆开取出主板，注意不要损坏内部元件！<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182122268.jpg" alt="取下螺丝"></p>
+<h3 id="刷-ArmBian-底包"><a href="#刷-ArmBian-底包" class="headerlink" title="刷 ArmBian 底包"></a>刷 ArmBian 底包</h3><p>将下载好的 ArmBian 系统固件刷入玩客云，为后续刷机做好准备。具体步骤如下：</p>
+<ul>
+<li>打开已下载安装好的<code>“USB_Burning_Tool：晶晨烧录工具”</code>，并导入烧录包<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182123269.png" alt="导入烧录包"></li>
+<li>选择烧录配置，然后点击<code>“开始”</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182124771.png" alt="烧录配置"></li>
+<li>使用 USB 公对公线将主板和电脑连接起来<br>(USB 接口应选择靠近 HDMI 接口的那一边)<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182126519.jpg" alt="接入USB接口"></li>
+<li><p>短接刷机触点，并给设备接通电源<br>(此时电脑会自动连接主板，进入刷机模式)</p>
+<div class="note danger modern"><p>注：不同玩客云型号所对应的短接刷机触点是有所不同的，请参考以下图片进行短接操作。</p>
+</div>
+<p><code>1.0</code>版本主板短接触点<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182133751.png" alt="1.0版本主板"><br><code>1.3</code>版本主板短接触点<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182134262.png" alt="1.3版本主板"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182138509.png" alt="进入刷机模式"></p>
+</li>
+<li><p>等待刷机完成，注意先点击刷机软件中的<code>“停止”</code>，再移除 USB 连接线，然后重启设备<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182139217.png" alt="刷机完成"></p>
+</li>
+</ul>
+<h3 id="进入路由器后台查看设备IP"><a href="#进入路由器后台查看设备IP" class="headerlink" title="进入路由器后台查看设备IP"></a>进入路由器后台查看设备IP</h3><ul>
+<li>查找名为<code>“onecloud”</code>的设备，并记下其 IP 地址<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182140430.png" alt="查找设备Ip"></li>
+</ul>
+<h3 id="刷入-CasaOS"><a href="#刷入-CasaOS" class="headerlink" title="刷入 CasaOS"></a>刷入 CasaOS</h3><p>在 ArmBian 底包的基础上刷入 CasaOS 系统。这一过程需要耐心等待，以确保刷机顺利完成。</p>
+<ul>
+<li><p>使用 MobaXterm 连接 ArmBian 系统<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182141970.png" alt="连接ArmBian系统"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182142344.png" alt="连接MobaXterm"></p>
+</li>
+<li><p>登录 ArmBian 系统 - 账号：root 默认密码：1234<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182143434.png" alt="登录ArmBian系统"></p>
+</li>
+<li><p>修改登录密码并取消设置新账户<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182143317.png" alt="修改密码"></p>
+</li>
+<li><p>检查系统时间及时区<br>执行命令：</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">date</span> -R</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182144795.png" alt="系统时间及时区"></p>
+<ul>
+<li>如果系统时区不正确，需要修改时区<br>执行命令：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime</span><br></pre></td></tr></table></figure>
+<p>建议重新运行命令查看是否成功修改时区<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182145663.png" alt="修改时区"></p>
+<ul>
+<li>修改软件安装源以提高安装成功率<br>执行命令：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nano /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182145386.png" alt="编辑软件源"><br>进入编辑页面，将原有的软件源用<code>“#”</code>注释掉<br>比如:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free</span></span><br></pre></td></tr></table></figure>
+<p>在文本下方的空白处添加以下代码：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182146289.png" alt="编辑保存软件源"></p>
+<ul>
+<li>更新本地软件包列表并升级已安装的软件包<br>执行命令：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update &amp;&amp; apt-get upgrade</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182147132.png" alt="更新本地软件包列表"></p>
+<ul>
+<li>安装 CasaOS 系统<br>执行命令：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- https://get.casaos.io | bash</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182147239.png" alt="安装CasaOS系统"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182148439.png" alt="安装CasaOS系统"></p>
+<div class="note info flat"><p>若无法安装，可先安装 Docker<br>执行命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">aptinstall docker.io</span><br></pre></td></tr></table></figure>
+</div>
+<h3 id="登录-CasaOS-界面"><a href="#登录-CasaOS-界面" class="headerlink" title="登录 CasaOS 界面"></a>登录 CasaOS 界面</h3><p>安装 CasaOS 系统成功后，就可以登录到 CasaOS 系统界面，开始体验全新的系统。</p>
+<ul>
+<li><p>可以通过设备的 IP 地址访问 CasaOS<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182150996.png" alt="登录CasaOS界面"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182150607.png" alt="登录CasaOS界面"></p>
+</li>
+<li><p>注册 CasaOS 帐户<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182151702.png" alt="注册CasaOS帐户"></p>
+</li>
+<li><p>添加适用于玩客云设备的软件库，链接如下：</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://play.cuse.eu.org/Cpe204-Appstore-play-arm.zip</span><br><span class="line">http://play.cuse.eu.org/Cpe204-Appstore-play-arm.zip</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182152874.png" alt="添加软件库"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182152060.png" alt="添加软件库"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202405182152962.png" alt="添加软件库"><br><div class="note warning flat"><p>注：只需填入其中一个链接即可，如果使用 https 协议添加不成功，则可以使用 http 协议。</p>
+</div></p>
+<h2 id="CasaOS-系统介绍"><a href="#CasaOS-系统介绍" class="headerlink" title="CasaOS 系统介绍"></a>CasaOS 系统介绍</h2><h3 id="Docker-功能"><a href="#Docker-功能" class="headerlink" title="Docker 功能"></a>Docker 功能</h3><p>CasaOS 系统支持 Docker 功能，这意味着你可以轻松地安装和运行各种应用程序，扩展玩客云的功能。</p>
+<h3 id="推荐应用"><a href="#推荐应用" class="headerlink" title="推荐应用"></a>推荐应用</h3><ul>
+<li>Home Assistant：这是一款极为强大的智能家居控制中心，能使你便捷地对家中的各类智能设备进行管理。</li>
+<li>青龙：可用于 Python、JavaScript、Shell 以及 Typescript 脚本的任务管理平台。</li>
+<li>qBittorrent：免费的 BitTorrent 下载工具。</li>
+<li>Alist：一个能够支持多种存储的文件列表程序。</li>
+<li>Pi-hole：强大的网络广告拦截利器。</li>
+<li>Memos：简单且易用的笔记应用，便于你记录重要的信息和创意想法。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>玩客云刷入轻 NAC 系统（CasaOS）是一次充满挑战和乐趣的经历。通过刷机，我们不仅释放了玩客云的潜力，还获得了一个功能强大、易于使用的系统。CasaOS 系统的 Docker 功能和丰富的应用支持让玩客云变得更加实用和有趣。结合 cpolar 内网穿透实现的远程访问功能，让我们可以随时随地访问和管理玩客云。</p>
+<p>如果你对玩客云刷入轻 NAC 系统（CasaOS）感兴趣，不妨动手尝试一下。相信这一过程会让你对玩客云有全新的认识，并为你的数字生活带来更多的便利和乐趣。</p>
+<p>需要注意的是，刷机有一定风险，请谨慎操作，并确保你已经备份了重要的数据。同时，本文提供的信息仅供参考，具体的刷机过程可能因设备和系统版本的不同而有所差异。祝你刷机顺利！</p>
+<hr>
+<p>请关注公众号，并回复<code>“玩客云”</code>以获取相关资源。<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png" alt="微信公众号"></p>
+]]></content>
+      <categories>
+        <category>玩客云</category>
+      </categories>
+      <tags>
+        <tag>CasaOS</tag>
+        <tag>玩客云</tag>
       </tags>
   </entry>
 </search>
